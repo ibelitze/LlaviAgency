@@ -1,0 +1,116 @@
+
+
+
+
+/*----------RESPONSIVES DEL MENU PRINCIPAL PARA DIFERENTES ANCHURAS DE PANTALLA----------*/
+
+
+@media screen and (max-width: 1085px){
+
+	.logollavi {
+		margin: 2px;
+		width: 80px;
+		left: 45%;
+		top: 6px;
+		z-index: 5;
+	}
+
+	.servicios {position: fixed; top: 30px; left: 27%; }
+	.portafolio {position: fixed; top: 30px; left: 35%; }
+	.agencia {position: fixed; top: 30px; left: 57%; }
+	.contacto {position: fixed; top: 30px; left: 67%; }
+
+}
+
+@media screen and (max-width: 876px){
+
+	.logollavi {
+		margin: 2px;
+		width: 80px;
+		left: 45%;
+		top: 6px;
+		z-index: 5;
+	}
+
+	.servicios {position: fixed; top: 30px; left: 27%; }
+	.portafolio {position: fixed; top: 30px; left: 35%; }
+	.agencia {position: fixed; top: 30px; left: 57%; }
+	.contacto {position: fixed; top: 30px; left: 68%; }
+
+
+}
+
+
+
+
+@media screen and (max-width: 760px){
+
+
+	.servicios {position: fixed; top: 30px; left: 23%; }
+	.portafolio {position: fixed; top: 30px; left: 34%; }
+	.agencia {position: fixed; top: 30px; left: 60%; }
+	.contacto {position: fixed; top: 30px; left: 69%; }
+
+	
+}
+
+
+
+
+
+@media screen and (max-width: 672px){
+
+
+	.servicios {position: fixed; top: 30px; left: 21%; }
+	.portafolio {position: fixed; top: 30px; left: 32%; }
+	.agencia {position: fixed; top: 30px; left: 62%; }
+	.contacto {position: fixed; top: 30px; left: 71%; }
+
+	
+}
+
+@media screen and (max-width: 600px){
+
+	.menu {
+		font-size: 9px;
+	}
+
+	.logollavi {
+		margin-top: 2px;
+		width: 80px;
+		position: fixed;
+		left: 45%;
+		top: 7px;
+	}
+
+
+	.servicios {position: fixed; top: 30px; left: 17%; }
+	.portafolio {position: fixed; top: 30px; left: 30%; }
+	.agencia {position: fixed; top: 30px; left: 64%; }
+	.contacto {position: fixed; top: 30px; left: 75%; }
+
+	
+}
+
+@media screen and (max-width: 430px){
+
+	.menu {
+		font-size: 8px;
+	}
+
+	.logollavi {
+		margin-top: 4px;
+		width: 72px;
+		position: fixed;
+		left: 2%;
+		top: 8px;
+	}
+
+
+	.servicios {position: fixed; top: 30px; left: 28%; }
+	.portafolio {position: fixed; top: 30px; left: 43%; }
+	.agencia {position: fixed; top: 30px; left: 62%; }
+	.contacto {position: fixed; top: 30px; left: 77%; }
+
+	
+}

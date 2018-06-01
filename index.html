@@ -1,0 +1,909 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Llavi Agency</title>	
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, user-scalable=no'/>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9;IE=10;IE=Edge,chrome=1"/>
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+    <link rel="stylesheet" type="text/css" href="css/style3.css">
+    <link rel="stylesheet" type="text/css" href="css/style4.css">    
+    <link rel="stylesheet" type="text/css" href="css/portafolio.css">
+    <link rel="stylesheet" href="css/font-awesome.css" />
+	<link rel="stylesheet" href="css/style_portafolio.css" />
+	<link rel="stylesheet" type="text/css" href="css/volteeDispositivo.css">
+	<link rel="stylesheet" type="text/css" href="css/1000x800.css">
+	<link rel="stylesheet" type="text/css" href="css/1366x700.css">
+	<link rel="stylesheet" type="text/css" href="css/1600x900.css">
+	<link rel="stylesheet" type="text/css" href="css/1280x900.css">
+	<link rel="stylesheet" type="text/css" href="css/1280x1024.css">
+	<link rel="stylesheet" type="text/css" href="css/1440x900.css">
+	<link rel="stylesheet" type="text/css" href="css/500x800.css">
+	<link rel="stylesheet" type="text/css" href="css/320menos.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script src="js/modernizr.js"></script>
+	<script type="text/javascript" src="js/cargaImagenes.js"></script>
+</head>
+<body onload="cargaImagenes(), inicio()">
+
+	<div id="looper" class="looper">
+		<img src="img/loader.gif"> 
+		<p>Cargando...</p>
+	</div>
+
+
+
+	<div id="sonidoOFF" class="sonidoOFF">
+		<img class="sonidoOUT" id="sonidoOUT" src="img/sonidoOUT.png" onclick="cargarSonidos()">
+		<img class="sonidoIN" id="sonidoIN" src="img/sonidoIN.png" onclick="cargarSonidos()">
+		<p>Desactivar / Activar</p>
+		
+	</div>
+
+
+	<div class="bg1"></div>
+
+  	<div class="barraLeft" id="barraLeft">
+  		<img id="scrollLeft" class="scrollLeft" src="img/scrollLeft.png">
+  	</div>
+  	<div class="barraRight" id="barraRight" >
+  		<img id="scrollRight" class="scrollRight" src="img/scrollRight.png">
+  	</div>
+	
+
+<!-- 	<main class="cd-main-content"></main> -->
+		<div class="menu" id="menu">
+			<a class="servicios cd-btn3" href="#">AGENCIA</a>
+			<a class="portafolio cd-btn4" href="#">SERVICIOS</a>		
+			<a class="agencia cd-btn2" href="#0">PORTAFOLIO</a>
+			<a class="contacto cd-btn" href="#0">CONTACTO</a>
+
+		</div>
+
+	<!--////////////////// AJAX DEL FORMULARIO //////////////////-->
+
+
+
+
+	<!-- ///////////////// CONTACTO ///////////////// -->
+
+<div class="cd-panel from-right">
+		<header class="cd-panel-header">
+			<a href="#0" class="cd-panel-close">Cerrar</a>
+		</header>
+
+		<div class="cd-panel-container">
+			<div class="cd-panel-content">
+			<form method="post" id="datos">
+				<div class="formulario">
+					<h2>CONTÁCTANOS</h2>
+					<h4>Completa el formulario para mayor información</h4>
+
+					<div class="form" >
+						<p class="Enombre">Nombre</p>
+						<input type="text" name="nombre" id="nombre" class="nombre" required="required">
+						<p class="Eemail">E-mail</p>
+						<input type="email" name="email" id="email" class="email" required="required">
+						<p class="Etlf">Teléfono</p>
+						<input type="text" name="telefono" id="telefono" class="tlf" required="required">
+					</div>
+					<div class="textarea">
+						<p class="Emensaje">Mensaje</p>
+						<textarea class="msn" name="mensaje" id="mensaje" required="required"></textarea>
+					</div>
+				</div>
+
+				<a href="#0" class="cd-panel-close">Cerrar</a>
+				<img id="contactoimg" class="contactoimg" src="img/contacto.png">
+				<button type="reset" id="reset"></button>
+				<button type="submit" id="enviar" value="Enviar" class="botonFormulario">Enviar</button>
+
+			</form>
+			<a target="_blank" href="https://www.facebook.com/llaviagency/"><img class="fb" src="img/facebook3.png"></a>
+				<a target="_blank" href="https://twitter.com/LLAVIAGENCY"><img class="tw" src="img/twitter3.png"></a>
+				<a target="_blank" href="https://www.instagram.com/llaviagency/"><img class="ins" src="img/instagram3.png"></a>
+				<a target="_blank" href="https://ve.linkedin.com/company/llavi-agency"><img class="linkedin" src="img/linkedin3.png"></a>
+
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+
+
+
+
+	<!-- ///////////////// AGENCIA ///////////////// -->
+
+	<div class="cd-panel3 from-right3">
+		<div class="cd-panel-header3"></div>
+		<div class="cd-panel-container3">
+			<div class="cd-panel-content3">
+
+				<img class="agencia2" src="img/agencia.png">
+				<img id="productofinal2" class="productofinal2" src="img/productofinal.png">
+
+				<h3>Somos Expertos del</h3>
+				<h1>INBOUND MARKETING</h1>
+				<div class="parrafo"><p>Ayudamos a las marcas a tener un acercamiento efectivo con sus clientes potenciales en medios digitales. Analizamos cada situación con el fin de ejecutar estrategias efectivas que cumplan obtetivos reales acordes al estado actual de la empresa. </p></div>
+
+				<div class="flip3D1">
+					<div class="back1"></div>
+					<div class="front1"></div>
+				</div>
+
+				<div class="flip3D2">
+					<div class="back2"></div>
+					<div class="front2"></div>
+				</div>
+
+				<div class="flip3D3">
+					<div class="back3"></div>
+					<div class="front3"></div>
+				</div>
+
+				<img class="gif" src="img/caja.gif">
+
+				<a href="#0" class="cd-panel-close3">Cerrar</a>
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+
+
+
+
+	<!-- ///////////////// PORTAFOLIO ///////////////// -->
+
+	<div class="cd-panel2 from-right2">
+		<div class="cd-panel-header2"></div>
+
+		<div class="cd-panel-container2">
+			<div class="cd-panel-content2">
+				<a href="#0" class="cd-panel-close2">Cerrar</a>
+
+				<div class="homepage">
+					<div id="page-wrapper">
+
+					<!-- Header -->
+						<div id="header">
+
+								<!-- Inner -->
+								<div class="inner">
+									<div class="ocultar_l">
+										<h2 class="letraC">PORTAFOLIO</h2>
+										<p class="letraPortafolio">Conoce parte de nuestros clientes y aliados comerciales</p>
+
+										<div class="sp-slideshow">
+
+										  <input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+											<label for="button-1" class="button-label-1"></label>
+
+											<input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+											<label for="button-2" class="button-label-2"></label>
+
+											<input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+											<label for="button-3" class="button-label-3"></label>
+
+											<input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+											<label for="button-4" class="button-label-4"></label>
+
+											<input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
+											<label for="button-5" class="button-label-5"></label>
+
+											<input id="button-6" type="radio" name="radio-set" class="sp-selector-6" />
+											<label for="button-6" class="button-label-6"></label>
+
+																		
+ 											
+
+											<label for="button-1" class="sp-arrow sp-a1"></label>
+											<label for="button-2" class="sp-arrow sp-a2"></label>
+											<label for="button-3" class="sp-arrow sp-a3"></label>
+											<label for="button-4" class="sp-arrow sp-a4"></label>
+											<label for="button-5" class="sp-arrow sp-a5"></label>
+											<label for="button-6" class="sp-arrow sp-a6"></label>
+
+
+
+
+
+											<div class="sp-content" id="slider">
+												<ul class="sp-slider clearfix holder">
+													<li ><img src="images/portafolio/10_globofran_f.jpg" alt="image11"/></li>
+													<li ><img src="images/portafolio/3_memorial_f.jpg" alt="image03" /></li>
+													<li><img src="images/portafolio/4_exe_f.jpg" alt="image04" /></li>
+													<li ><img src="images/portafolio/6_american_f.jpg" alt="image06" /></li>
+													<li ><img src="images/portafolio/7_jose_f.jpg" alt="image07" /></li>
+													<li ><img src="images/portafolio/8_8did_f.jpg" alt="image08" /></li>
+													
+												</ul>
+											</div> <!--sp-content -->
+											<div id="cel" class="sp-content celular">
+												<ul class="sp-slider clearfix">
+													<li><img src="images/portafolio/10_globofranMovil.jpg" alt="image11"/></li>
+													<li><img src="images/portafolio/3_memorial.jpg" alt="image03" /></li>
+													<li><img src="images/portafolio/4_exe.jpg" alt="image04" /></li>
+													<li><img src="images/portafolio/6_american.jpg" alt="image06" /></li>
+													<li><img src="images/portafolio/7_jose.jpg" alt="image07" /></li>
+													<li><img src="images/portafolio/8_8did.jpg" alt="image08" /></li>
+												</ul>
+											</div>
+											<div  class="sp-content redes" id="slider">
+												<ul class="sp-slider clearfix holder">
+
+													<!-- globofran -->
+													<li class="red">
+													<div class="dis_redes"><a target="_blank" href="https://www.facebook.com/GloboFran/"><img src="images/portafolio/f.png" alt="image01" /></a>
+													    <a target="_blank" href="https://twitter.com/globofran1"><img src="images/portafolio/tw.png" alt="image01" /></a>
+														  <a target="_blank" href="https://www.instagram.com/globofran/"><img src="images/portafolio/ins.png" alt="image01" /></a>
+													</div>
+													</li>												
+
+
+													<li class="red">
+														<div class="dis_redes"><a target="_blank" href=" https://www.facebook.com/memorial.rd/"><img src="images/portafolio/f.png" alt="image01" /></a>
+														    <a target="_blank" href="https://twitter.com/Memorial_RD"><img src="images/portafolio/tw.png" alt="image01" /></a>
+															  <a target="_blank" href=" https://www.instagram.com/memorial_rd/"><img src="images/portafolio/ins.png" alt="image01" /></a>
+
+														</div>
+													</li>
+
+													<li class="red">
+														<div class="dis_redes">
+														    <a target="_blank" href="https://twitter.com/EXEcargo"><img src="images/portafolio/tw.png" alt="image01" /></a>
+															  <a target="_blank" href="https://www.instagram.com/execargo/"><img src="images/portafolio/ins.png" alt="image01" /></a>
+														  </div>
+													</li>
+
+													<li class="red">
+														<div class="dis_redes"><a target="_blank" href="https://www.facebook.com/AmericanBlack7/"><img src="images/portafolio/f.png" alt="image01" /></a>
+														    <a target="_blank" href="https://twitter.com/AmericanBlack7"><img src="images/portafolio/tw.png" alt="image01" /></a>
+															  <a target="_blank" href="https://www.instagram.com/americanblack7/" alt="image01" /><img src="images/portafolio/ins.png" alt="image01" /></a>
+
+														</div>
+													</li>
+
+													<li class="red">
+														<div class="dis_redes"><a target="_blank" href=" https://www.facebook.com/JoseIConsultor/"><img src="images/portafolio/f.png" alt="image01" /></a>
+														    <a target="_blank" href="https://twitter.com/JoseIConsultor"><img src="images/portafolio/tw.png" alt="image01" /></a>
+															  <a target="_blank" href="https://www.instagram.com/joseiconsultor/"><img src="images/portafolio/ins.png" alt="image01" /></a>
+															  
+														</div>
+													</li>
+
+													<li class="red">
+														<!-- 8DID -->
+														<div class="dis_redes"><a target="_blank" href="https://www.facebook.com/8didTel/"><img src="images/portafolio/f.png" alt="image01" /></a>
+														    <a target="_blank" href="https://twitter.com/8DID_Tel"><img src="images/portafolio/tw.png" alt="image01" /></a>
+															  <a target="_blank" href="https://www.instagram.com/8did_tel/"><img src="images/portafolio/ins.png" alt="image01" /></a>
+															  
+														</div>
+
+													</li>
+
+												
+												</ul>
+											</div> <!-- content-redes -->
+										</div><!-- sp-slideshow -->
+									</div> <!-- ocultar -->
+								</div> <!-- inner -->
+						</div> <!-- header -->
+					</div> <!-- pagewrapper -->
+				</div> <!-- homepage -->
+			</div> <!-- cd-panel-content2 -->
+		</div> <!-- cd-panel-container2 -->
+	</div> <!-- cd-panel2 -->
+
+
+
+
+	<!-- ///////////////// SERVICIOS ///////////////// -->
+
+	
+		<div class="cd-panel4 from-right4">
+		<div class="cd-panel-header4"></div>
+		<div class="cd-panel-container4">
+			<div id="cd-panel-content4" class="cd-panel-content4">
+
+				<a href="#0" class="cd-panel-close4">Cerrar</a>
+
+				<img class="fondoServicios" src="img/fondoInternas2.jpg">
+				<img class="llavitoCapa" src="img/llavitoCapa.png">
+				<img class="servicios1" src="img/servicios1.png">
+
+				<div class="p1"><p>Convertimos a <span class="spanTexto">CLIENTES POTENCIALES</span> en 
+				<span class="spanTexto">CLIENTES ACTIVOS</span></p></div>
+
+				<div class="p2"><p>con <span class="spanTexto2">REDES SOCIALES, SEM, SEO</span> y 
+				<span class="spanTexto2">PUBLICIDAD ONLINE</span></p></div>
+
+				<span class="seo">SEO</span>
+				<span class="sem">SEM</span>
+				
+				<div class="servicioParrafo1">
+					<p>Mediante la ejecución de estrategias SEO (Search Engine Optimization) nuestros expertos logran 
+					aumentar el tráfico en tu sitio, un requisito vital para el éxito de tu marca.</p>
+					<p>Especialistas en posicionamiento Web llevarán tu página a la máxima eficiencia, en los resultados
+					de búsqueda de mayor uso en el mundo.</p>
+				</div>
+
+				<div class="servicioParrafo2">
+					<span>¿Por qué ejecutar estrategias SEO?</span>
+					<p>Cuando se realicen búsquedas que coincidan con lo ofreces, es conveniente que tu marca sea 
+					la primera opción que los buscadores presenten a tu público. Esto es posible con el desarrollo de
+					buenas prácticas SEO.</p>
+				</div>
+
+				<div class="servicioParrafo3">
+					<p>Con el posicionamiento web SEM (Search Engine Marketing) te ayudamos a promocionar tu marca a través de la publicidad en buscadores como Google, para los que creamos e insertamos campañas de anuncios por clic.</p>
+
+					<span>¿Por qué ejecutar estrategias SEM?</span>
+					<p>Con una buena estrategia SEM, que incluya campañas de anuncios por clic patrocinados en Google, mejoramos el alcance de tu negocio, controlando el presupuesto que tengas destinado para iniciar</p>
+				</div>
+
+				<div class="PGA"><span>PUBLICIDAD EN GOOGLE ADWORDS</span></div>
+
+				<div class="servicioParrafo4">
+					<span>Ventajas de Adwords</span><br>
+					<p>- Es pagado según los clics que reciba tu anuncio.</p> 
+					<p>- Costos inferiores al de canales publicitarios tradicionales.</p> 
+					<p>- Banners de tu marca en distintas páginas web.</p> 
+					<p>- Presupuesto personalizado por el cliente.</p> 
+					<p>- Medición exacta de resultados.</p> 
+					<p>- Posibilidad de elegir los límites geográficos de tu publicidad.</p> 
+				</div>
+
+				<div class="servicioParrafo5">
+					<span>CREATIVIDAD WEB</span>
+					<p>Mentes expertas de nuestra agencia de marketing trabajan en la elaboración, diseño y programación 
+					óptima de páginas web y blogs,  para una eficiente navegación, asegurando que tus clientes potenciales 
+					encuentren fácilmente lo que están buscando.</p>
+				</div>
+
+				<div class="servicioParrafo6">
+					<div class="span6"><span>PUBLICIDAD EN MEDIOS DIGITALES</span></div>
+					<div class="span7"><p>Ejecutamos planes de marketing para representar a tu marca en distintos medios masivos digitales,
+					con el fin de lograr una amplia notoriedad, que complemente el resto de las estrategias para el
+					público que has elegido.</p></div>
+				</div>
+
+				<span class="PM">PUBLICIDAD MASIVA</span>
+				<span class="ADNDIG">ADN DIGITAL + PLAN SOCIAL MEDIA</span>
+				<span class="RS">REDES SOCIALES</span>
+
+				<div class="servicioParrafo7">
+					<span>- EMAIL Marketing</span>
+					<p>A través del Email Marketing, damos a conocer tu marca de forma masiva, permitiendo el establecimiento de una relación constante con tus consumidores.</p>
+					<span>- SMS Marketing</span>
+					<p>Ejecutamos campañas de SMS Marketing ajustadas a tus objetivos; haciendo uso de sofisticadas herramientas para los envíos de mensajes de texto a tu base de datos.</p>
+				</div>
+
+				<div class="servicioParrafo8">
+					<p>Creamos una identidad virtual particular y una personalidad única para tu marca, resaltando sus
+					fortalezas y dirigiéndola a tu público objetivo, con el fin de diferenciarla de la competencia.</p>
+				</div>
+
+				<div class="servicioParrafo9">
+					<p>Ejecutamos estrategias en la gestión de Redes Sociales, con el fin de alcanzar los objetivos propuestos, administrando tus perfiles sociales para que logres una presencia efectiva de tu marca en el mundo digital.</p>
+				</div>
+	
+				
+			</div> <!-- cd-panel-content -->
+		</div> <!-- cd-panel-container -->
+	</div> <!-- cd-panel -->
+
+
+
+	
+	
+	<!--  _________IMAGEN DE FONDO, MENU Y DIVS QUE CONTROLAN EL SCROLL HORIZONTAL_________  -->
+
+
+	<div id="wrapper" class="wrapper2">
+	  <div class="scrolls">
+		  <div id="imageDiv" class="imageDiv">
+
+			<div id="barraAzul" class="barraAzul"></div>
+
+				<img class="bg0" src="img/home1.png">
+				<img class="bg2" src="img/bg1.png">
+				<img class="bg3" src="img/bg3.png">
+				<img class="bg4" src="img/bg4.png">
+				<img class="bg5" src="img/4pantalla.png">
+
+		  </div>
+	  </div>
+  </div>
+
+
+
+
+  	<!--  _________BARRAS PARA MOVER EL SCROLL_________  -->
+
+	
+	<div class="Bwrapper">
+		<div id="1" class="bolita1" ></div>
+	  	<div id="2" class="bolita2" ></div>
+	  	<div id="3" class="bolita3" ></div>
+	  	<div id="4" class="bolita4" ></div>
+	</div>
+
+	
+	<img class="logollavi" src="img/logollavi.jpg">
+
+
+	<!--  _________TACHONES_________  -->
+
+	<div id="tachon1" class="tachon1"></div>
+	
+
+	<!--  _________TUERCAS DE FONDO_________  -->
+
+	<div><a href="#scroll2"><img id="tuerca17" class="tuerca17" src="img/tuerca4.png"></a></div>
+	<img id="tuerca18" class="tuerca18" src="img/tuerca10.png">
+	<img id="cadena" class="cadena" src="img/cadena.png">
+	<img id="tuerca19" class="tuerca19" src="img/tuerca12.png">
+	<img id="tuerca20" class="tuerca20" src="img/tuerca11.png">
+
+	<img id="llavimaquina" class="llavimaquina" src="img/llaviMaquina.png">
+	<img id="llavimaquina2" class="llavimaquina2" src="img/llaviMaquina2.png">
+
+	<!--  _________VALVULAS QUE GIRAN_________  -->
+
+	<img id="valvula1" class="valvula1" src="img/valvula1.png">
+	<img id="valvula3" class="valvula3" src="img/valvula1.png">
+
+
+	<!--  _________AGUJAS DE MEDIDORES_________  -->
+
+	<img id="aguja2" class="aguja2" src="img/aguja2.png">
+	<img id="aguja3" class="aguja3" src="img/aguja3.png">
+	<img id="aguja6" class="aguja6" src="img/aguja3.png">
+
+	<!--  _________LUCES DE MÁQUINAS_________  -->
+
+	<img id="luz1" class="luz1" src="img/luz1.png">
+	<img id="luz2" class="luz2" src="img/luz2.png">
+	<img id="luz3" class="luz3" src="img/luz2.png">
+	<img id="luz4" class="luz4" src="img/luz1.png">
+
+	<img id="luz5" class="luz5" src="img/luz4.png">
+	<img id="luz6" class="luz6" src="img/luz3.png">
+
+	<img id="luz9" class="luz9" src="img/luzBlanca.png">
+	<img id="luz10" class="luz10" src="img/luzBlanca.png">
+	<img id="luz11" class="luz11" src="img/luzBlanca.png">
+
+	<!--  _________BOTONES Y PASADORES_________  -->
+	
+	
+	<img id="btn5" class="btn5" src="img/boton2.png">
+	<img id="btn6" class="btn6" src="img/boton2.png">
+	<img id="btn7" class="btn7" src="img/boton2.png">
+	<img id="btn8" class="btn8" src="img/boton1.png">
+	<img id="btn9" class="btn9" src="img/boton1.png">
+	<img id="btn10" class="btn10" src="img/boton1.png">
+	<img id="btn11" class="btn11" src="img/boton2.png">
+
+	<img id="pasador1" class="pasador1" src="img/pasador1.png">
+	<img id="pasador2" class="pasador2" src="img/pasador1.png">
+	<img id="pasador3" class="pasador3" src="img/pasador2.png">
+	<img id="pasador4" class="pasador4" src="img/pasador2.png">
+
+
+	<!--  _________MA-1_________  -->
+	<div id="ma1" class="ma1">
+		<img id="aguja1" class="aguja1" src="img/aguja1.png">
+		<img id="btn1" class="btn1" src="img/boton1.png">
+		<img id="btn2" class="btn2" src="img/boton1.png">
+		<img id="btn3" class="btn3" src="img/boton1.png">
+		<img id="btn4" class="btn4" src="img/boton1.png">
+		<img id="cadenaMA" class="cadenaMA" src="img/cadena.png">
+		<img id="tuerca5" class="tuerca5" src="img/tuerca5.png">
+		<img id="tuerca6" class="tuerca6" src="img/tuerca6.png">
+		<img id="vasija" class="vasija" src="img/vasija.png">
+		<img id="maquina1a" class="maquina1a" src="img/maquina1.png">
+		<img id="carpeta2" class="carpeta2" src="img/carpeta2.png">
+		<img id="tuercaMaquina1" class="tuercaMaquina1" src="img/tuerca10.png">
+	</div>
+
+
+	<!--  _________HUMOS Y REDES SOCIALES_________  -->
+
+	<img id="humo1" class="humo1" src="img/humo.png">
+	<img id="humo2" class="humo2" src="img/humo2.png">
+	<img id="humo3" class="humo3" src="img/humo3.png">
+	<img id="humo4" class="humo4" src="img/humo4.png">
+
+	<img id="humo5" class="humo5" src="img/humo5.png">
+	<img id="humo6" class="humo6" src="img/humo5.png">
+	<img id="humo7" class="humo7" src="img/humo5.png">
+
+	<img id="in" class="in" src="img/in.png">
+	<img id="in2" class="in2" src="img/in2.png">
+	<img id="gplus" class="gplus" src="img/gplus.png">
+	<img id="twitter" class="twitter" src="img/twitter.png">
+	<img id="twitter2" class="twitter2" src="img/twitter2.png">
+	<img id="facebook2" class="facebook2" src="img/facebook2.png">
+	<img id="youtube" class="youtube" src="img/youtube.png">
+	<img id="instagram" class="instagram" src="img/instagram.png">
+	<img id="bb" class="bb" src="img/bb.png">
+	<img id="facebook" class="facebook" src="img/facebook.png">
+
+	<!--  _________MISCELANEOS_________  -->
+
+	<img id="riel" class="riel" src="img/riel.png">
+
+	<img id="correo" class="correo" src="img/correo.png">
+	<div><a href="#scroll3"><img id="adn" class="adn" src="img/adn.png"></a></div>
+
+	<img id="desague1" class="desague1" src="img/desague1.png">
+	<img id="desague2" class="desague2" src="img/desague2.png">
+
+	<img id="producto1" class="producto1" src="img/producto1.png">
+	<img id="producto2" class="producto2" src="img/producto2.png">
+	<img id="producto3" class="producto3" src="img/producto3.png">
+	<img id="producto4" class="producto4" src="img/producto4.png">
+	<img id="producto5" class="producto5" src="img/producto5.png">
+
+	<img id="conexion22" class="conexion22" src="img/conexion2.png">
+	<img id="conexion33" class="conexion33" src="img/conexion2.png">
+	<img id="conexion2" class="conexion2" src="img/conexion1.png">
+	<img id="riel10" class="riel10" src="img/riel10.png">
+	
+	
+	<img id="piezaMaquina4" class="piezaMaquina4"	src="img/piezaMaquina4.png">
+	<img id="ventana" class="ventana" src="img/piezaMaquina5.png">
+	<img id="mundo" class="mundo" src="img/mundo.png">
+
+	<!--  _________TRANSFORMADOR AZUL CON ANIMACIÓN_________  -->
+
+	<div id="transformador" class="transformador">
+		<img id="maquinaAzul" class="maquinaAzul" src="img/maquinaAzul.png">
+		<div id="barra2" class="barra2"></div>
+		<img id="aguja5" class="aguja5" src="img/aguja3.png">
+		<img id="luz7" class="luz7" src="img/luz4.png">
+		<img id="luz8" class="luz8" src="img/luz3.png">
+	</div>
+	
+	<!--  _________CAJITA QUE RECORRE LOS RIELES_________  -->
+
+	<div id="cajita" class="cajita">
+		<img id="caja1" class="caja1" src="img/caja1.png">
+		<img id="caja2" class="caja2" src="img/caja2.png">
+		<img id="hoja1" class="hoja1" src="img/hoja1.png">
+	</div>
+
+<!--  _________MÁS MISCELANEOS_________  -->
+
+	<img id="telefono" class="telefono" src="img/telefono.png">
+	<img id="manito" class="manito" src="img/manito.png">
+
+	<img id="desagueAzul" class="desagueAzul" src="img/desagueAzul.png">
+	
+	<img id="gota" class="gota" src="img/gota.png">
+	<img id="tuboEnsayo1" class="tuboEnsayo1" src="img/tuboEnsayo1.png">
+	<img id="tuboEnsayo2" class="tuboEnsayo2" src="img/tuboEnsayo2.png">
+
+	<img id="piezaMaquina9" class="piezaMaquina9" src="img/piezaMaquina9.png">
+	<img id="piezaMaquina10" class="piezaMaquina10" src="img/piezaMaquina3.png">
+
+	<img id="vidrio" class="vidrio" src="img/vidrio1.png">
+
+	<img id="maquina10" class="maquina10" src="img/maquina10.png">
+	<img id="palanca2" class="palanca2" src="img/palanca2.png">
+	
+
+	<img id="manoCursor3" class="manoCursor3 animated infinite flash" src="img/manito_prueba.png">
+
+	<img id="logoAzul" class="logoAzul" src="img/logoAzul.png">
+	<img id="logoFucsia" class="logoFucsia" src="img/logoFucsia.png">
+	<div id="logoAzul1" class="logoAzul1"></div>
+	<img id="manoCursor4" class="manoCursor4 animated infinite flash" src="img/manito_prueba.png">
+
+
+	<!--  _________MAQUINA AMARILLA QUE BOTA EL BOMBILLO_________  -->
+
+	<div id="maquinaAmarilla" class="maquinaAmarilla">
+		<img id="maquinaAmarilla3" class="maquinaAmarilla3" src="img/maquinaAmarilla3.png">
+		<img id="piezaMaquina6" class="piezaMaquina6" src="img/piezaMaquina7.png">
+		<img id="piezaMaquina7" class="piezaMaquina7" src="img/piezaMaquina6.png">
+		<img id="bombillo" class="bombillo" src="img/bombillo.png">
+		<img class="piezaMaquina2" src="img/piezaMaquina2.png">
+		<img id="fuga" class="fuga" src="img/fuga.png">
+	</div>
+	
+	<!--  _________CARRITO QUE ENTRA Y SALE DE MÁQUINA_________  -->
+
+	<div id="divCarrito" class="divCarrito">
+		<img id="carrito" class="carrito" src="img/carrito.png">
+	</div>
+
+	
+	<!--  _________PIEZAS MAQUINA AMARILLA (DE DONDE SALE EL MUNDO)_________  -->
+
+	<img id="piezaAmarilla" class="piezaAmarilla" src="img/maquinaAmarilla.png">
+	<img id="piezaAmarilla2" class="piezaAmarilla2" src="img/maquinaAmarilla2.png">
+	<img id="ventana2" class="ventana2" src="img/ventana.png">
+	<img id="fondoAmarillo" class="fondoAmarillo" src="img/fondoAmarillo.png">
+	<img id="piezaAmarilla3" class="piezaAmarilla3" src="img/piezaAmarilla2.png">
+	
+	<!--  _________TUBOS QUE BOTAN HUMO_________  -->
+
+	<img id="tubo1" class="tubo1" src="img/tubos.png">
+	<img id="tubo2" class="tubo2" src="img/tubos.png">
+	<img id="tubo3" class="tubo3" src="img/tubos.png">
+
+	<!--  _________PENÚLTIMA MÁQUINA DONDE ENTRA LA CAJA DEL RIEL_________  -->
+
+	<img id="ventana3" class="ventana3" src="img/piezaMaquina5.png">
+
+	<!--  _________CAJA DEL FINAL CON TODOS LOS PRODUCTOS_________  -->
+
+	<img id="productofinal" class="productofinal" src="img/productofinal.png">
+
+	
+	<!--  _________GORDITOS DE TUBERÍAS_________  -->
+
+	<img id="gordito1" class="gordito1" src="img/gordito1.png">
+	<img id="gordito2" class="gordito2" src="img/gordito2.png">
+	<img id="gordito3" class="gordito3" src="img/gordito1.png">	
+	<img id="gordito8" class="gordito8" src="img/gordito3.png">
+
+	<!--  _________LLAVITO_________  -->
+	
+
+
+	<div id="llavi1" class="llavi1">
+		<img id="llavito1" class="llavito1" src="img/llavi1.png">
+
+		<img id="cabeza" class="cabeza" src="img/cabeza.png">
+		<img id="cuerpo" class="cuerpo" src="img/cuerpo.png">
+
+		<div id="movMano" class="movMano">
+			<img id="carpeta1" class="carpeta1" src="img/carpeta1.png">
+			<img id="dedosllavi" class="dedosllavi" src="img/dedosllavi.png">
+		</div>
+		<img id="dialogo1" class="dialogo1" src="img/llaviDialogo.png">
+		<div id="dialogoClick" class="dialogoClick"></div>
+	</div>
+
+	<div id="llavi0" class="llavi0">
+		<img id="llavito0" class="llavito0" src="img/llavito1.png">
+		<img id="equis0" class="equis0" src="img/equis.png">
+	</div>
+
+	<div id="llavi2" class="llavi2">
+		<img id="llavito2" class="llavito2" src="img/llavito2.png">
+			<img id="equis" class="equis" src="img/equis.png">
+	</div>
+
+	<div id="llavi3" class="llavi3">
+		<img id="llavito3" class="llavito3" src="img/llavito3.png">
+		<img id="equis2" class="equis2" src="img/equis.png">
+	</div>
+
+	<div id="llavi4" class="llavi4">
+		<img id="llavito4" class="llavito4" src="img/llavito4.png">
+		<img id="equis3" class="equis3" src="img/equis.png">
+	</div>
+
+	<div id="llavi5" class="llavi5">
+		<img id="llavito5" class="llavito5" src="img/llavito5.png">
+		<div id="equis9" class="equis9 cd-btn"></div> 
+	</div>
+
+	<!--  _________MAQUINA RIEL SUPERIOR, CON MANO MECÁNICA_________  -->
+
+	<div id="maquinaRiel" class="maquinaRiel">
+		<img id="manoCursor" class="manoCursor animated infinite flash" src="img/manito_prueba.png">
+		<img id="piezaRiel" class="piezaRiel" src="img/maquinaRiel.png">
+		<img id="cuerda" class="cuerda" src="img/cuerda.png">
+		<img id="finalCuerda" class="finalCuerda" src="img/finalCuerda.png">
+		<img id="gancho1" class="gancho1" src="img/gancho1.png">
+		<img id="gancho2" class="gancho2" src="img/gancho2.png">
+		<div id="text1" class="text1"><p>INBOUND MARKETING</p></div>
+		<div id="text2" class="text2"><p>¿CÓMO LO HACEMOS?</p></div>
+		<div id="text3" class="text3"><p>¿QUÉ HACEMOS POR TÍ?</p></div>
+		<div id="text9" class="text9"><p>CONTÁCTANOS</p></div>
+	</div>
+
+
+	<!--  _________RIELES DE MAQUINARIA (CINTAS TRANSPORTADORAS)_________  -->
+
+	<div id="riel1" class="riel1"></div>
+	<div id="riel2" class="riel2"></div>
+	<div id="riel3" class="riel3"></div>
+	<div id="riel4" class="riel4"></div>
+	<div id="riel5" class="riel5"></div>
+	<div id="riel6" class="riel6"></div>
+	<div id="riel7" class="riel7"></div>
+	<div id="riel8" class="riel8"></div>
+	<div id="riel9" class="riel9"></div>
+
+
+
+	<!--  _________KEYFRAMES_________  -->
+	
+	<div id="latido1" class="latido1"></div>
+	<div id="latido2" class="latido2"></div>
+	<div id="latido3" class="latido3"></div>
+
+	<div id="barra1" class="barra1"></div>
+	<div id="barra3" class="barra3"></div>
+
+
+
+
+
+	<!-- SONIDOS Y MÚSICA DE FONDO -->
+
+	<audio class="sonidoFondo" id="sonidoFondo" src="sounds/Fondo1.mp3" autoplay loop></audio>
+	
+		<!-- Pantalla 1 -->
+ 		<!-- <audio id="movAndroide" src="sounds/movAndroide.mp3"></audio> -->
+ 		<audio id="primeraMaquina1" src="sounds/Primeraetapa/primeraMaquina1.mp3"></audio>
+ 		<audio id="carpeta" src="sounds/Primeraetapa/carpeta.mp3"></audio>
+ 		<audio id="segundaMaquina" src="sounds/Primeraetapa/segundaMaquina.mp3"></audio>
+ 		<audio id="ideasFlotando" src="sounds/Primeraetapa/ideasFlotando.mp3"></audio>
+		<audio id="logoA" src="sounds/Primeraetapa/logoAzul.mp3"></audio>
+		<audio id="giroManilla" src="sounds/Primeraetapa/giroManilla.mp3"></audio>
+		<audio id="primeraMaquina2" src="sounds/Primeraetapa/primeraMaquina2.mp3"></audio>
+		<audio id="gan1" src="sounds/Primeraetapa/gancho1.mp3"></audio>
+		<audio id="gan2" src="sounds/Primeraetapa/gancho2.mp3"></audio>
+		<audio id="gan3" src="sounds/Primeraetapa/gancho3.mp3"></audio>
+		<audio id="gan4" src="sounds/Primeraetapa/gancho4.mp3"></audio>
+		
+		<!-- Pantalla 2 -->
+		<audio id="bombillo1" src="sounds/Segundaetapa/bombillo.mp3"></audio>
+		<audio id="carril1" src="sounds/Segundaetapa/carril.mp3"></audio>
+		<audio id="P2Maquina1" src="sounds/Segundaetapa/P2Maquina1.mp3"></audio>
+		<audio id="redes" src="sounds/Segundaetapa/redes.mp3"></audio>
+		
+		<!-- Pantalla 3 -->
+		<audio id="carril2" src="sounds/Terceraetapa/carril2.mp3"></audio>
+		<audio id="carril3" src="sounds/Terceraetapa/carril3.mp3"></audio>
+		<audio id="gota1" src="sounds/Terceraetapa/gota.mp3"></audio>
+		<audio id="maquinaTubo" src="sounds/Terceraetapa/maquinaTubo.mp3"></audio>
+		<audio id="planeta" src="sounds/Terceraetapa/planeta.mp3"></audio>
+		<audio id="transformador1" src="sounds/Terceraetapa/transformador.mp3"></audio>
+
+		<!--Pantalla 4 -->
+		<audio id="caeHoja" src="sounds/Cuartaetapa/caeHoja.mp3"></audio>
+		<audio id="cajaMovCompleto" src="sounds/Cuartaetapa/cajaMovCompleto.mp3"></audio>
+		<audio id="correo1" volume="0.5" src="sounds/Cuartaetapa/correo.mp3"></audio>
+		<audio id="cajaMov1" src="sounds/Cuartaetapa/cajaMov1.mp3"></audio>
+
+		<!-- Pantalla 5 -->
+		<audio id="palancaFinal" src="sounds/Quintaetapa/palancaFinal.mp3"></audio>
+		<audio id="penultimaMaq" src="sounds/Quintaetapa/penultimaMaq.mp3"></audio>
+		<audio id="productoFinal1" src="sounds/Quintaetapa/productoFinal.mp3"></audio>
+
+
+
+		<!-- DISPOSITIVOS MÓVILES -->
+	<div id="voltee" class="voltee">
+		<img src="img/loader.gif"> 
+		<p>Por favor, voltee el dispositivo en horizontal para poder apreciar la página</p>
+	</div>
+
+		<div id="wrapper2" class="wrapper3">
+		  <div class="scrolls">
+			  <div class="imageDiv2">
+
+					<img src="img/fondo_moviles.png">
+
+				</div>
+			</div>
+		 </div>
+
+	<img id="riel_moviles" class="riel_moviles" src="img/riel_moviles.png">
+	<img id="maquinaverde" class="maquinaverde" src="img/maquina3_moviles.png">	
+	<img id="menu-movil" class="menu-movil cd-btn4" src="img/menu-movil.png"> 
+
+	
+
+
+	
+	<!--  _________JAVASCRIPT_________  -->
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/portafolio.js"></script>
+	<script type="text/javascript">
+                  $(document).ready(function(){
+                      $("#datos").submit(function(e) {
+                        e.preventDefault();
+                       /* $("#enviar").attr("disabled",true);*/
+                        var datos =$("#datos").serialize();
+                        $.ajax({
+                            url : "formulario.php",
+                            type: "POST",
+                            data : datos,
+                            success: function(datos)
+                            {
+			      var d=datos.split("-");
+                              var resul=d.pop();
+                             if(resul=="0")
+                             {
+                              alert("Mensaje no Enviado");
+                              $("#reset").click();
+                             }
+                             if(resul=="1")
+                             {
+                               alert("Mensaje Enviado Exitosamente");
+								$("#reset").click();
+                             }
+                             if(resul=="2")
+                             {
+                               alert("Debe ingresar todos los datos");
+                               $("#reset").click();
+                             }
+                              $("#enviar").removeAttr("disabled");
+                              $("#reset").click();
+                            }
+                         });
+                      });
+                  });
+
+    </script>
+	<script type="text/javascript">
+		//ESTO EJECUTA UN RECARGA COMPLETA DE LA PÁGINA CADA VEZ QUE SE CAMBIE LA RESOLUCIÓN DE PANTALLA
+		//O SE GIRE EL DISPOSITIVO MÓVIL
+		//ESTO ES IMPORTANTE DEJARLO.
+
+		
+
+
+
+		$(window).resize(function(){ 
+			$('#looper').show();
+
+			if(screen.availWidth > 500 && screen.availHeight > 600){
+				location.reload(); 
+			}
+
+		});
+
+		jQuery( window ).on( "orientationchange", function( event ) { 
+
+			if(screen.availWidth > screen.availHeight){
+				$('#looper').show();
+			}
+			location.reload(); 
+		 } );
+
+	</script>
+	<script type="text/javascript">
+		
+			$('#1').on('click touchend', function(){scrollb(1)});
+			$('#2').on('click touchend', function(){scrollb(2)});
+			$('#3').on('click touchend', function(){scrollb(3)});
+			$('#4').on('click touchend', function(){scrollb(4)});
+
+			$('#barraLeft').on('click touchend', function(){ scrollleft() });
+			$('#barraRight').on('click touchend', function(){ scrollright() });
+
+	</script>
+<!-- 	<script type="text/javascript">
+		$('.bg1').parallax({ speed: 0.6, axis: 'x' });
+	</script> -->   
+	<script type="text/javascript" src="js/animacionesGenerales.js"></script>
+	<script type="text/javascript" src="js/animaciones1360x700.js"></script>
+	<script type="text/javascript" src="js/animaciones1000x800.js"></script>
+	<script type="text/javascript" src="js/animaciones1440x900.js"></script>
+	<script type="text/javascript" src="js/animaciones360x640.js"></script>
+	<script type="text/javascript" src="js/animaciones320.js"></script>
+	<script type="text/javascript" src="js/scrolls.js"></script> 
+	<script type="text/javascript" src="js/1600x900.js"></script>		
+	<script type="text/javascript" src="js/1000x800.js"></script>
+	<script type="text/javascript" src="js/320.js"></script>
+	<script type="text/javascript" src="js/360x640.js"></script>
+	<script type="text/javascript" src="js/1366x700.js"></script>
+</body>
+</html>

@@ -1,0 +1,367 @@
+/* -------------------------------- 
+
+TODO ESTO DE ACÁ ABAJO CORRESPONDE AL CSS DEL PANEL QUE SE ABRE Y MUESTRA EL PORTAFOLIO
+
+-------------------------------- */
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*::after, *::before {
+  content: '';
+}
+
+/*body {
+  font-size: 100%;
+  font-family: "Droid Sans", sans-serif;
+  color: #dbe2e9;
+  background: #424f5c;
+}*/
+
+a {
+  color: #89ba2c;
+  text-decoration: none;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+html, body {
+  height: 100%;
+}
+
+.cd-main-content3 {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+
+.cd-panel3 {
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  visibility: hidden;
+  -webkit-transition: visibility 0.7s 0.7s;
+  -moz-transition: visibility 0.7s 0.7s;
+  transition: visibility 0.7s 0.7s;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.cd-panel3::after {
+  /* overlay layer */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: background 0.7s 0.7s;
+  -moz-transition: background 0.7s 0.7s;
+  transition: background 0.7s 0.7s;
+}
+.cd-panel3.is-visible {
+  visibility: visible;
+  -webkit-transition: visibility 0s 0s;
+  -moz-transition: visibility 0s 0s;
+  transition: visibility 0s 0s;
+}
+.cd-panel3.is-visible::after {
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transition: background 0.3s 0s;
+  -moz-transition: background 0.3s 0s;
+  transition: background 0.3s 0s;
+}
+.cd-panel3.is-visible .cd-panel-close3::before {
+  -webkit-animation: cd-close-1 0.6s 0.3s;
+  -moz-animation: cd-close-1 0.6s 0.3s;
+  animation: cd-close-1 0.6s 0.3s;
+}
+.cd-panel3.is-visible .cd-panel-close3::after {
+  -webkit-animation: cd-close-2 0.6s 0.3s;
+  -moz-animation: cd-close-2 0.6s 0.3s;
+  animation: cd-close-2 0.6s 0.3s;
+}
+
+@-webkit-keyframes cd-close3 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+  }
+}
+@-moz-keyframes cd-close3 {
+  0%, 50% {
+    -moz-transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(45deg);
+  }
+}
+@keyframes cd-close3 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+@-webkit-keyframes cd-close3 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
+  }
+}
+@-moz-keyframes cd-close3 {
+  0%, 50% {
+    -moz-transform: rotate(0);
+  }
+  100% {
+    -moz-transform: rotate(-45deg);
+  }
+}
+@keyframes cd-close3 {
+  0%, 50% {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+}
+.cd-panel-header3 {
+  z-index: 21;
+  position: fixed;
+  width: 90%;
+  height: 50px;
+  line-height: 50px;
+  background: rgba(255, 255, 255, 0.96);
+  z-index: 20;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+  -webkit-transition: top 0.7s 0s;
+  -moz-transition: top 0.7s 0s;
+  transition: top 0.7s 0s;
+}
+.cd-panel-header3 h1 {
+  font-weight: bold;
+  color: #89ba2c;
+  padding-left: 5%;
+}
+.from-right3 .cd-panel-header3, .from-left3 .cd-panel-header3 {
+  top: -50px;
+}
+.from-right3 .cd-panel-header3 {
+  right: 0;
+}
+.from-left3 .cd-panel-header3 {
+  left: 0;
+}
+.is-visible .cd-panel-header3 {
+  top: 0;
+  -webkit-transition: top 0.7s 0.7s;
+  -moz-transition: top 0.7s 0.7s;
+  transition: top 0.7s 0.7s;
+}
+@media only screen and (min-width: 768px) {
+  .cd-panel-header3 {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-panel-header3 {
+    width: 800px;
+  }
+}
+@media only screen and (min-width: 1430px) {
+  .cd-panel-header3 {
+    width: 900px;
+  }
+}
+
+
+.cd-panel-close3 {
+  z-index: 21;
+  position: fixed;
+  top: 11px;
+  right: 10px;
+  height: 100%;
+  width: 60px;
+  /* image replacement */
+  display: inline-block;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+.cd-panel-close3::before, .cd-panel-close3::after {
+  /* close icon created in CSS */
+  position: absolute;
+  top: 22px;
+  left: 20px;
+  height: 3px;
+  width: 20px;
+  background-color: #424f5c;
+  /* this fixes a bug where pseudo elements are slighty off position */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.cd-panel-close3::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.cd-panel-close3::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.no-touch .cd-panel-close3:hover {
+  background-color: #91CCF3;
+}
+.no-touch .cd-panel-close3:hover::before, .no-touch .cd-panel-close3:hover::after {
+  background-color: #ffffff;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+}
+.no-touch .cd-panel-close3:hover::before {
+  -webkit-transform: rotate(220deg);
+  -moz-transform: rotate(220deg);
+  -ms-transform: rotate(220deg);
+  -o-transform: rotate(220deg);
+  transform: rotate(220deg);
+}
+.no-touch .cd-panel-close3:hover::after {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+.cd-panel-container3 {
+  position: fixed;
+  width: 90%;
+  height: 100%;
+  top: 0;
+  background: #fafcff;
+  z-index: 20;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.7s;
+  -moz-transition-duration: 0.7s;
+  transition-duration: 0.7s;
+  -webkit-transition-delay: 0.7s;
+  -moz-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+.from-right3 .cd-panel-container3 {
+  right: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  -moz-transform: translate3d(100%, 0, 0);
+  -ms-transform: translate3d(100%, 0, 0);
+  -o-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+}
+.from-left3 .cd-panel-container3 {
+  left: 0;
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  transform: translate3d(-100%, 0, 0);
+}
+.is-visible .cd-panel-container3 {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+}
+@media only screen and (min-width: 1000px) {
+  .cd-panel-container3 {
+    width: 900px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .cd-panel-container3 {
+    width: 1021px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .cd-panel-container3 {
+    width: 1088px;
+  }
+}
+
+.cd-panel-content3 {
+  position: absolute;
+  background-image: url('../img/fondoInternas.jpg');
+  background-position: 100% 100%;
+  background-size: 100% 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0px 0%;
+  overflow: auto;
+  /* smooth scrolling on touch devices */
+  -webkit-overflow-scrolling: touch;
+}
+.cd-panel-content3 p {
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #424f5c;
+  line-height: 1.4;
+  margin: 2em 0;
+}
+
+
+
+
+.cd-panel-content3 p:first-of-type {
+  margin-top: 0;
+}
+@media only screen and (min-width: 768px) {
+  .cd-panel-content3 p {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,699 @@
+@media only screen and (max-width: 1400px) and (min-width: 1301px){
+
+	* { padding: 0; margin: 0; box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;}
+	body { margin: 0; padding: 0; background: #C6F2F4; overflow-y: hidden; overflow-x: hidden;}
+
+html, body {width: 100%, height: 100%;}
+
+/* PANTALLA DE ESPERA (LOADING) */
+
+.looper {z-index: 40; position: absolute; width: 100%; height: 100%; background-color: #DEFCFF; opacity: 0.9;
+			transition: 0.3s ease; -moz-transition: 0.3s ease; -webkit-transition: 0.3s ease; -o-transition: 0.3s ease;}
+.looper > img {width: 10%; position: absolute; top:0; left:0; right:0; bottom:0; margin: auto;
+			transition: 0.3s ease; -moz-transition: 0.3s ease; -webkit-transition: 0.3s ease; -o-transition: 0.3s ease;}
+.looper > p {width: 10%; height: 38%; position: fixed; top:0; left:0; right:0; bottom:0; margin: auto;
+			transition: 0.3s ease; -moz-transition: 0.3s ease; -webkit-transition: 0.3s ease; -o-transition: 0.3s ease;
+ font-family: helveticaNeueLT; color: #6cb3e9; font-size: 25px;}
+
+
+/*FONDO E IMAGENES DE FÁBRICA */
+
+.wrapper2 { position: absolute; left: 0; top: 0; width: 4810px; height:565px; display: block;}
+.imageDiv {  margin: 0; height: 620px; width: 4810px;} 
+.imageDiv img { margin-top: 60px; width:850px; height:550px; overflow-y: hidden; z-index:1;}
+.menu { width: 4810px;}
+
+.bg1 { background-image:url(../img/tuercas_fondo.jpg); width: 4810px; height: 611px; top: -16px; left: 0;
+		position: absolute; z-index:1; background-repeat: repeat-x; background-size: 8105px 700px; margin-top: 86px;
+		 background-position: 6020px 2%; }
+
+
+/* CUADRO DE SONIDO */
+
+.sonidoOFF{z-index: 30; position: fixed; width: 60px; height: 60px; top: 2px; left: 2px; font-family: helveticaNeueLT; 
+	color: #597FA7; font-size: 10px;}
+.sonidoOFF > p {position: fixed; left: 50px; top: 24px;}
+.sonidoIN {z-index: 31; width: 30; position: fixed; top: 15px; left: 15px; cursor: pointer; display: block;}
+.sonidoOUT {z-index: 32; width: 30; position: fixed; top: 15px; left: 15px; cursor: pointer; display: block;}		 
+
+
+
+/* FORMULARIO DE CONTACTO (PÁGINA INTERNA) */
+	
+.cd-panel-content {font-family: robotoRegular;}	
+
+.cd-panel-content img {z-index: 15; left: 89px; width: 863px; position: absolute; top: 67px;}
+
+.cd-panel-content button {
+  z-index: 16; left: 218px; top: 373px; width: 100px; height: 100px; position: absolute;
+  border-radius: 100%; border: 1px solid #173C72; background-color: #173C72; color: #ffffff; font-size: 16px; cursor: pointer;}
+
+.cd-panel-content .formulario {
+	z-index: 21; position: absolute; left: 191px; top: 77px; height: 269px; width: 631px;} 
+
+.form {z-index: 21; position: absolute; left: 124px; top: 79px; height: 207px; width: 300px; }
+.form p {margin-bottom: 20px; margin-top: 10px;}
+.formulario .form input {border: 0px; border-bottom: 1px solid #9AA1A5; width: 164px; height: 22px; margin-top: 3px; margin-bottom: 2px; }
+.formulario h2 {position: absolute; left:  218px; color: #5FA6F0; margin-top: 11px; font-family: robotoBlack; font-size: 25px;}
+.formulario h4 {position: absolute; left: 144px; color: #B2BCC2; margin-top: 42px; font-family: robotoRegular;}
+.formulario .textarea {z-index: 21; position: absolute; left: 334px; top: 79px; height: 226px; width: 236px;}
+.formulario textarea { border: 1px solid #9AA1A5; width: 85%; height: 156px; margin-top: 15px;}
+.msn { border: 1px solid #9AA1A5; width: 72%; height: 130px; resize: none; max-height: 130px; max-width: 76%;}
+.formulario p {color: #5FA6F0; font-size: 15px; margin-bottom: 0px; margin-top: 9px;}
+
+.cd-panel-content .fb {position: absolute; z-index: 21; height: 40px; width: 40px; top: 484px; left: 394px;}
+.cd-panel-content .tw {position: absolute; z-index: 21; height: 40px; width: 40px; top: 484px; left: 455px;}
+.cd-panel-content .ins {position: absolute; z-index: 21; height: 40px; width: 40px; top: 484px; left: 520px;}
+.cd-panel-content .linkedin {position: absolute; z-index: 21; height: 40px; width: 40px; top: 484px; left: 583px;}
+
+
+
+/* AGENCIA */
+.cd-panel-container3 {overflow-y: hidden;}
+
+.agencia2 {	position: absolute; width: 750px; height: 522px; top: 123px; left: 0px;}
+.gif { position: absolute; width: 496px; height: 191px; left: 280px; top: 497px; }
+.cd-panel-content3 > h3 {position: absolute; font-size: 27px; font-family: robotoRegular; left: 450px; top: 79px; color: #6cb3e9;}
+.cd-panel-content3 > h1 {position: absolute; font-size: 38px; font-family: robotoBlack; left: 450px; top: 110px; color: #6cb3e9;}
+.cd-panel-content3 > .parrafo {position: absolute; left: 450px; top: 148px; width: 474px; height: 117px;}
+.cd-panel-content3 > .parrafo > p {font-size: 15; font-family: helveticaNeueLT; color: #2d628b; line-height: 1.8;}								
+
+
+/*------ TARJETA 1 ------*/
+
+.flip3D1 {position: absolute; width: 164px; height: 145px; left: 339px; top: 258px; }
+.flip3D1 > .front1 { position: absolute; transform: perspective(450px) rotateY(0deg); border-radius: 20px; background-image: url('../img/QuehacemosIMG.png');
+					background-size: 180px 180px; background-position: 45% 59%;
+					-webkit-transform: perspective( 450px ) rotateY( 0deg ); -webkit-backface-visibility: hidden; transition: -webkit-transform .5s linear 0s;
+					width: 162px; height: 146px; backface-visibility: hidden; transition: transform .5s linear 0s;}
+
+.flip3D1 > .back1 { position: absolute; transform: perspective(450px) rotateY(180deg); border-radius: 20px; background-image:  url('../img/QuehacemosTEXTO.png');
+					background-size: 181px 149px; background-position: 45% 59%;
+					width: 162px; height: 146px; backface-visibility: hidden; transition: transform .5s linear 0s;
+					-webkit-backface-visibility: hidden; transition: -webkit-transform .5s linear 0s; -webkit-transform: perspective( 450px ) rotateY( 180deg );}
+
+.flip3D1:hover > .front1{
+	-webkit-transform: perspective( 450px ) rotateY( -180deg ); transform: perspective( 450px ) rotateY( -180deg ); }
+.flip3D1:hover > .back1{
+	-webkit-transform: perspective( 450px ) rotateY( 0deg ); transform: perspective( 450px ) rotateY( 0deg ); }	
+
+
+
+/*------ TARJETA 2 ------*/
+
+
+.flip3D2 {position: absolute; width: 164px; height: 145px; left: 633px; top: 310px; }
+.flip3D2 > .front2 { position: absolute; transform: perspective(450px) rotateY(0deg); border-radius: 20px; background-image: url('../img/ComolohacemosIMG.png');
+					background-size: 180px 180px; background-position: 45% 59%;
+					-webkit-transform: perspective( 450px ) rotateY( 0deg ); -webkit-backface-visibility: hidden; transition: -webkit-transform .5s linear 0s;
+					width: 162px; height: 146px; backface-visibility: hidden; transition: transform .5s linear 0s;}
+
+.flip3D2 > .back2 { position: absolute; transform: perspective(450px) rotateY(180deg); border-radius: 20px; background-image:  url('../img/ComolohacemosTEXTO.png');
+					background-size: 181px 149px; background-position: 45% 59%;
+					width: 162px; height: 146px; backface-visibility: hidden; transition: transform .5s linear 0s;
+					-webkit-backface-visibility: hidden; transition: -webkit-transform .5s linear 0s; -webkit-transform: perspective( 450px ) rotateY( 180deg );}
+
+.flip3D2:hover > .front2{
+	-webkit-transform: perspective( 450px ) rotateY( -180deg ); transform: perspective( 450px ) rotateY( -180deg ); }
+.flip3D2:hover > .back2{
+	-webkit-transform: perspective( 450px ) rotateY( 0deg ); transform: perspective( 450px ) rotateY( 0deg ); }
+
+
+
+/*------ TARJETA 3 ------*/
+
+
+.flip3D3 {position: absolute; width: 164px; height: 145px; left: 174px; top: 417px;}
+.flip3D3 > .front3 { position: absolute; transform: perspective(450px) rotateY(0deg); border-radius: 20px; background-image:  url('../img/PorquelohacemosIMG.png');
+					background-size: 180px 180px; background-position: 45% 59%;
+					-webkit-transform: perspective( 450px ) rotateY( 0deg ); -webkit-backface-visibility: hidden; transition: -webkit-transform .5s linear 0s;
+					width: 162px; height: 146px; backface-visibility: hidden; transition: transform .5s linear 0s;}
+
+.flip3D3 > .back3 { position: absolute; transform: perspective(450px) rotateY(180deg); border-radius: 20px; background-image:  url('../img/PorquelohacemosTEXTO.png');
+					background-size: 181px 149px; background-position: 45% 59%;
+					width: 162px; height: 146px; backface-visibility: hidden; transition: transform .5s linear 0s;
+					-webkit-backface-visibility: hidden; transition: -webkit-transform .5s linear 0s; -webkit-transform: perspective( 450px ) rotateY( 180deg );}
+
+.flip3D3:hover > .front3{
+	-webkit-transform: perspective( 450px ) rotateY( -180deg ); transform: perspective( 450px ) rotateY( -180deg ); }
+.flip3D3:hover > .back3{
+	-webkit-transform: perspective( 450px ) rotateY( 0deg ); transform: perspective( 450px ) rotateY( 0deg ); }	
+
+
+.productofinal2 {z-index: 15; position: absolute; height: 163px; width: 183px; left: 150px; top: 32px;}
+
+
+
+/* PORTAFOLIO */
+
+.letraC {z-index: 11; position: relative; margin: 0 auto; text-align: center; font-family: helveticaNeueLT; color: #4f8c98; font-size: 30px;}
+.letraPortafolio {z-index: 11; position: relative; margin: 20px auto; color: black; text-align: center; font-family: helveticaL; font-size: 19px;}
+#header {position: absolute; height: 10%; top: 0px;}
+#header .inner {height: 712%; margin: 5px auto;}
+.sp-slideshow {position: relative; margin: 0 0 0 278px; width: 42%; max-width: 46%; min-width: 40%; height: 302px; }
+.dis_redes > a { height: 35px; width: 36px;}
+
+
+
+
+
+/* SERVICIOS */
+
+.cd-panel-content4 { height: 1024px; overflow-x: hidden; /*overflow-y: scroll;*/ }
+.cd-panel-container4 {/*overflow-y: scroll;*/ overflow-x: hidden;}
+
+.fondoServicios {z-index: 1; width: 100%; height: 313%; position: fixed; margin-top: -124px;}
+.servicios1 {z-index: 10; position: absolute; width: 997px; height: 2222px; left: 0px; top: 7px;}
+.llavitoCapa {z-index: 11; position: absolute; width: 164px; left: 214px; top: 138px;}
+
+.p1 {z-index: 11; position: absolute; left: 266px; top: 56px;}
+.p1 > p {color: #4f8c98; font-family: helveticaL; font-size: 22px;}
+.spanTexto {font-family: helveticaNeueLT; font-size: 23px;}
+
+.p2 {z-index: 11; position: absolute; left: 329px; top: 85px;}
+.p2 > p {color: #4f8c98; font-family: helveticaL; font-size: 22px;}
+.spanTexto2 {font-family: helveticaNeueLT; font-size: 23px;}
+
+.seo {z-index: 11; position: absolute; left: 370px; top: 177px; color: #ff9900; font-family: helveticaNeueLT; font-size: 36px; }
+.sem { z-index: 11; position: absolute; left: 668px; top: 505px; color: #ff9900; font-family: helveticaNeueLT; font-size: 36px;}
+
+.servicioParrafo1 {z-index: 11; position: absolute; left: 469px; top: 216px; width: 371px; height: 218px; text-align: justify;}
+.servicioParrafo1 > p {color: #5a5a5a; font-family: helveticaNeueLT; font-size: 14px; margin-bottom: -23px; line-height: 1.4;}
+
+.servicioParrafo2 {z-index: 11; position: absolute; left: 159px; top: 351px; width: 680px; height: 90px; text-align: justify;}
+.servicioParrafo2 > span {color: #4792c2; font-family: helveticaNeueLT; font-size: 17px; margin-bottom: -23px;}
+.servicioParrafo2 > p {color: #5a5a5a; font-family: helveticaNeueLT; font-size: 14px; line-height: 1.3;}
+
+.servicioParrafo3 {z-index: 11; position: absolute; left: 159px; top: 489px; width: 476px; height: 245px;}
+.servicioParrafo3 > p {color: #5a5a5a; font-family: helveticaNeueLT; font-size: 14px; margin-top: 1px; margin-bottom: 15px; line-height: 1.3;}
+.servicioParrafo3 > span {color: #4792c2; font-family: helveticaNeueLT; font-size: 17px; margin-bottom: -23px;}
+
+.PGA {z-index: 11; position: absolute; left: 223px; top: 867px; width: 195px; height: 210px; }
+.PGA > span {color: #ff9900; font-family: helveticaNeueLT; font-size: 23px; margin-bottom: -10px;}
+
+.servicioParrafo4 {z-index: 11; position: absolute; left: 465px; top: 808px; width: 310px; height: 210px;}
+.servicioParrafo4 > span {color: #4792c2; color: #ff9900; font-family: helveticaNeueLT; font-size: 24px; margin-bottom: -10px;}
+.servicioParrafo4 > p {color: #5a5a5a; font-family: helveticaNeueLT; margin-bottom: -28px; line-height: 1.3; font-size: 14px;}
+
+.servicioParrafo5 {z-index: 11; position: absolute; left: 159px; top: 1091px; width: 680px; height: 150px; text-align: justify;}
+.servicioParrafo5 > span {position: absolute; top: -37px; color: #ff9900; font-family: helveticaNeueLT; font-size: 24px; margin-left: 231px;}
+.servicioParrafo5 > p {color: #5a5a5a; font-family: helveticaNeueLT; margin-bottom: -33px; font-size: 14px; line-height: 1.3;}
+
+.servicioParrafo6 {z-index: 11; position: absolute; left: 194px; top: 1431px; width: 755px; height: 250px;}
+.span6 > span {color: #4792c2; color: #ff9900; font-family: helveticaNeueLT; font-size: 24px;}
+.span7 > p {color: #5a5a5a; font-family: helveticaNeueLT; margin-bottom: -33px; margin-top: 20px; font-size: 14px; line-height: 1.3;}
+.span6 {position: absolute; left: -35px; top: 6px; width: 27%;}
+.span7 {position: absolute; left: 171px; top: 2px; width: 468px; text-align: justify;}
+
+.PM {z-index: 11; position: absolute; left: 390px; top: 1564px; color: #ff9900; font-family: helveticaNeueLT; font-size: 24px;}
+.ADNDIG {z-index: 11; position: absolute; left: 350px; top: 1832px; color: #ff9900; font-family: helveticaNeueLT; font-size: 24px;}
+.RS {z-index: 11; position: absolute; left: 241px; top: 1921px; color: #ff9900; font-family: helveticaNeueLT; font-size: 24px;}
+
+.servicioParrafo7 {z-index: 11; position: absolute; left: 159px; top: 1603px; width: 606px; height: 204px; text-align: justify;}
+.servicioParrafo7 > span {color: #4792c2; font-family: helveticaNeueLT; font-size: 17px; margin-bottom: -23px;}
+.servicioParrafo7 > p {color: #5a5a5a; font-family: helveticaNeueLT; font-size: 14px; margin-top: 1px;}
+
+.servicioParrafo8 {z-index: 11; position: absolute; left: 241px; top: 1868px; width: 586px; height: 350px; text-align: justify;}
+.servicioParrafo8 > p {color: #5a5a5a; font-family: helveticaNeueLT; font-size: 14px; margin-top: 1px; line-height: 1.1;}
+
+.servicioParrafo9 {z-index: 11; position: absolute; left: 241px; top: 1955px; width: 586px; height: 86px; text-align: justify;}
+.servicioParrafo9 > p {color: #5a5a5a; font-family: helveticaNeueLT; font-size: 14px; margin-top: 1px; line-height: 1.1;}
+
+.bajar1 {z-index: 11; position: absolute; width: 80px; height: 80px; left: 64px; top: 805px; background-color: #fad556;}
+.bajar2 {z-index: 11; position: absolute; width: 80px; height: 80px; left: 64px; top: 1540px; background-color: #fad556;}
+.subir {z-index: 12; position: fixed; width: 85px; height: 85px; right: 2%; bottom: 3%; background-color: #fad556;}
+.fa-hand-pointer-o {font-size: 45px; margin: 20px 20px; color: white;}
+.fa-sort-desc {font-size: 50px; margin: 5px 25px; color: white;}
+
+
+
+/*CSS DE PÁGINA EN GENERAL*/
+
+.logollavi { margin: 3px; width: 85px; position: fixed; left: 46%; top: 5px; overflow-x: hidden; z-index: 5;}
+
+.imageDiv > .bg0 {z-index: 3; top: 0px; left: 100px; position: absolute;}
+.imageDiv > .bg2 {z-index: 3; top: 0px; left: 1171px; height: 547px; width: 462px; margin-top: 63px; position: absolute;}
+.imageDiv > .bg3 {z-index: 3; top: 0px; left: 1881px; left: 1881px; height: 555px; width: 574px; margin-top: 55px; position: absolute;}
+.imageDiv > .bg4 {z-index: 3; top: 0px; left: 2697px; width: 997px; height: 553px; margin-top: 57px; position: absolute;}
+.imageDiv > .bg5 {z-index: 3; top: 137px; left: 3697px; width: 862px; height: 290px; margin-top: 53px; position: absolute;}
+
+
+.menu { top: 0px; background: #FFFFFF; width: 4810px; height: 65px; z-index:3; position: absolute; font-size: 12px; }
+.menu > a { list-style: none; text-decoration: none; color: #597FA7; font-family: helveticaB; font-weight: bold;}
+.menu a:hover { opacity: 0.6; transition: 0.3s ease; -moz-transition: 0.3s ease; -webkit-transition: 0.3s ease; -o-transition: 0.3s ease;}
+
+.servicios {position: fixed; top: 30px; left: 28%; }
+.portafolio {position: fixed; top: 30px; left: 38%; }
+.agencia {position: fixed; top: 30px; left: 56%; }
+.contacto {position: fixed; top: 30px; left: 66%; }
+
+.barraAzul {z-index: 2; width: 4810px; height: 8px; position: absolute; top: 65px; left: 0px; background-color: #B6D6F5;}	
+
+
+/* BARRAS DE SCROLLS */
+
+.barraLeft {z-index: 19; width: 70px; height: 540px; left: 0px; top: 75px;
+	position: fixed; background-color: #FFFFFF; opacity: 0.3;}
+.barraLeft:hover {opacity: 0.5; transition: 0.5s ease; -moz-transition: 0.5s ease; -webkit-transition: 0.5s ease; -o-transition: 0.5s ease;}	
+.barraRight {z-index: 19; width: 70px; height: 540px; left: 95%; top: 75px;
+	position: fixed; background-color: #FFFFFF; opacity: 0.3;}
+.barraRight:hover {opacity: 0.5; transition: 0.5s ease; -moz-transition: 0.5s ease; -webkit-transition: 0.5s ease; -o-transition: 0.5s ease;}
+
+.scrollLeft {z-index: 19; width: 50px; height: 80px; left: 12px; top: 300px;
+	position: fixed; opacity: 0.5;}
+.scrollRight {z-index: 19; width: 50px; height: 80px; left: 95.5%; top: 300px;
+	position: fixed; opacity: 0.5;}
+
+.Bwrapper {z-index: 15; width: 200px; height: 35px; border-radius: 100px; background-color: #FFFFFF; opacity: 0.6;
+position: fixed; left: 41%; top: 605px;}
+.bolita1 {z-index: 21; width: 17px; height: 17px; border-radius: 100%; background-color: #597FA7; opacity: 0.8;
+position: absolute; left: 10%; top: 9px; cursor: pointer;}
+.bolita2 {z-index: 21; width: 17px; height: 17px; border-radius: 100%; background-color: #597FA7; opacity: 0.8;
+position: absolute; left: 33%; top: 9px; cursor: pointer;}	
+.bolita3 {z-index: 21; width: 17px; height: 17px; border-radius: 100%; background-color: #597FA7; opacity: 0.8;
+position: absolute; left: 57%; top: 9px; cursor: pointer;}	
+.bolita4 {z-index: 21; width: 17px; height: 17px; border-radius: 100%; background-color: #597FA7; opacity: 0.8;
+position: absolute; left: 81%; top: 9px; cursor: pointer;}	
+	
+
+/* TACHONES */
+
+.tachon1 { z-index: 2; position: absolute; height: 115px; width: 4810px; left: 0px; top: 495px; background-color: #4b93c2; }
+
+
+		/* TUERCAS DE FONDO */
+
+	.tuerca1 {z-index: 9; height: 70px; width: 70px; left: 1064px; top: 219px; position: absolute; }
+	.tuerca2 {z-index: 9; height: 60px; width: 60px; left: 211px; top: 103px; position: absolute;  }
+	.tuerca3 {z-index: 9; height: 80px; width: 80px; left: 10px; top: 340px; position: absolute;  }
+	.tuerca4 {z-index: 9; height: 90px; width: 90px; left: 1785px; top: 216px; position: absolute; }
+	
+	.tuerca7 {z-index: 9; height: 80px; width: 80px; left: 1096px; top: 303px; position: absolute;  }
+	.tuerca8 {z-index: 9; height: 50px; width: 50px; left: 1420px; top: 180px; position: absolute;  }
+	.tuerca9 {z-index: 9; height: 90px; width: 90px; left: 2480px; top: 164px; position: absolute;  }
+	.tuerca10 {z-index: 9; height: 90px; width: 90px; left: 2899px; top: 123px; position: absolute; }
+	.tuerca11 {z-index: 9; height: 60px; width: 60px; left: 3029px; top: 513px; position: absolute; }
+	.tuerca12 {z-index: 9; height: 80px; width: 80px; left: 3111px; top: 520px; position: absolute; }
+	.tuerca13 {z-index: 9; height: 80px; width: 80px; left: 3702px; top: 130px; position: absolute; }
+	.tuerca14 {z-index: 9; height: 80px; width: 80px; left: 4846px; top: 120px; position: absolute; }
+	.tuerca15 {z-index: 9; height: 40px; width: 40px; left: 4956px; top: 139px; position: absolute; }
+	.tuerca16 {z-index: 9; height: 80px; width: 80px; left: 5813px; top: 129px; position: absolute; }
+	.tuerca17 {z-index: 9; height: 100px; width: 100px; left: 1323px; top: 380px; position: absolute; }
+	.tuerca18 {z-index: 9; height: 100px; width: 100px; left: 3271px; top: 445px; position: absolute; display: none;}
+	.cadena {z-index: 9; z-index: 10; height: 52px; width: 99px; position: absolute; left: 2811px; top: 518px; display: none;}
+	.tuerca19 {z-index: 9; z-index: 10; height: 45px; width: 45px; position: absolute; left: 2879px; top: 510px; display: none;}
+	.tuerca20 {z-index: 9; z-index: 10; height: 60px; width: 60px; position: absolute; left: 2783px; top: 525px; display: none;}
+
+	.llavimaquina {z-index: 12; position: absolute; height: 110px; width: 178px; left: 1368px; top: 375px; display: block;}
+	.llavimaquina2 {z-index: 12; position: absolute; height: 118px; width: 12px; left: 1546px; top: 368px; display: block;}
+
+	.reciclaje { position: absolute; height: 55px; width: 55px; left: 353px; top: 525px; display: none;}
+
+
+	/* VALVULAS DE LA MÁQUINA */
+
+	.valvula1 {z-index: 10; position: absolute; height: 65px; width: 65px; left: 806px; top: 210px; display: none;}
+	.valvula1 {transition: 2.5s ease; -moz-transition: 2.5s ease; -webkit-transition: 2.5s ease; -o-transition: 2.5s ease;}
+
+	.valvula2 {z-index: 10; position: absolute; height: 100px; width: 100px; left: 775px; top: 480px; display: none;}
+	.valvula2 {transition: 2.5s ease; -moz-transition: 2.5s ease; -webkit-transition: 2.5s ease; -o-transition: 2.5s ease;}
+	
+	.valvula3 {z-index: 11; position: absolute; height: 60px; width: 60px; left: 4400px; top: 410px; display: none;}
+	.valvula3 {transition: 1s ease; -moz-transition: 1s ease; -webkit-transition: 1s ease; -o-transition: 1s ease;}
+
+	/* AGUJAS DE MEDIDORES */
+
+	
+	.aguja2 {z-index: 15; height: 41px; width: 9px; left: 457px; top: 332px; position: absolute; display: none;}
+	.aguja3 {z-index: 15; height: 25px; width: 8px; left: 2200px; top: 399px; position: absolute; display: none;}
+	.aguja4 {z-index: 15; height: 29px; width: 8px; left: 4266px; top: 281px; position: absolute; display: none;}
+	.aguja6 {z-index: 15; height: 25px; width: 8px; left: 4611px; top: 349px; position: absolute; display: none;}
+	
+	.aguja1 {transition: 1.5s ease; -moz-transition: 1.5s ease; -webkit-transition: 1.5s ease; -o-transition: 1.5s ease;}
+	.aguja2 {transition: 1.5s ease; -moz-transition: 1.5s ease; -webkit-transition: 1.5s ease; -o-transition: 1.5s ease;}
+	.aguja3 {transition: 1.5s ease; -moz-transition: 1.5s ease; -webkit-transition: 1.5s ease; -o-transition: 1.5s ease;}
+	.aguja4 {transition: 1.5s ease; -moz-transition: 1.5s ease; -webkit-transition: 1.5s ease; -o-transition: 1.5s ease;}
+	.aguja5 {transition: 1.5s ease; -moz-transition: 1.5s ease; -webkit-transition: 1.5s ease; -o-transition: 1.5s ease;}
+	.aguja6 {transition: 1.5s ease; -moz-transition: 1.5s ease; -webkit-transition: 1.5s ease; -o-transition: 1.5s ease;}
+
+
+	/* LUCES DE MÁQUINAS */
+
+	.luz1 { z-index: 10; position: absolute; height: 23px; width: 15px; left: 4255px; top: 243px; display: none;}
+	.luz2 { z-index: 10; position: absolute; height: 23px; width: 15px; left: 4255px; top: 338px; display: none;}
+	.luz3 { z-index: 10; position: absolute; height: 23px; width: 15px; left: 4255px; top: 243px; display: none;}
+	.luz4 { z-index: 10; position: absolute; height: 23px; width: 15px; left: 4255px; top: 338px; display: none;}
+
+	.luz5 { z-index: 10; position: absolute; height: 30px; width: 19px; left: 4604px; top: 185px; display: none;}
+	.luz6 { z-index: 10; position: absolute; height: 30px; width: 19px; left: 4604px; top: 185px; display: none;}
+
+	.luz9 {z-index: 10; height: 10px; width: 10px; position: absolute; left: 3851px; top: 228px; display: none;}
+	.luz10 {z-index: 10; height: 10px; width: 10px; position: absolute; left: 3851px; top: 244px; display: none;}
+	.luz11 {z-index: 10; height: 10px; width: 10px; position: absolute; left: 3851px; top: 260px; display: none;}
+
+
+	/* BOTONES Y PASADORES */
+
+	.btn5 { z-index: 16; position: absolute; height: 10px; width: 10px; left: 827px; top: 333px;  display: block;}
+	.btn6 { z-index: 16; position: absolute; height: 10px; width: 10px; left: 836px; top: 323px;  display: block;}
+	.btn7 { z-index: 16; position: absolute; height: 10px; width: 10px; left: 843px; top: 333px;  display: block;}
+
+	.btn8 { z-index: 14; position: absolute; height: 13px; width: 14px; left: 457px; top: 488px; display: none;}
+	.btn9 { z-index: 14; position: absolute; height: 13px; width: 14px; left: 475px; top: 488px;  display: none;}
+	.btn10 { z-index: 14; position: absolute; height: 13px; width: 14px; left: 494px; top: 488px; display: none;}
+
+	.btn11 {z-index: 16; position: absolute; height: 8px; width: 8px; left: 4043px; top: 388px; display: none;}
+
+	.pasador1 {z-index: 16; position: absolute; height: 10px; width: 9px; left: 2054px; top: 435px; display: none;}
+	.pasador2 {z-index: 16; position: absolute; height: 10px; width: 9px; left: 2059px; top: 447px; display: none;}
+
+	.pasador3 {z-index: 16; position: absolute; height: 9px; width: 10px; left: 4111px; top: 278px; display: none;}
+	.pasador4 {z-index: 16; position: absolute; height: 9px; width: 10px; left: 4125px; top: 276px; display: none;}
+
+
+	/* HUMO DE MÁQUINAS */
+
+	.humo1 {z-index: 10; position: absolute; height: 50px; width: 100px; left: 869px; top: 383px; display: none;}
+	.humo2 {z-index: 10; position: absolute; height: 100px; width: 120px; left: 2071px; top: 146px; display: none;}
+	.humo3 {z-index: 10; position: absolute; height: 90px; width: 110px; left: 2172px; top: 185px; display: none;}
+	.humo4 {z-index: 10; position: absolute; height: 80px; width: 100px; left: 2225px; top: 214px; display: none;}
+
+	.humo5 {z-index: 10; position: absolute; height: 57px; width: 100px; left: 1218px; top: 406px; transform: rotateY(180deg);display: none;}
+	.humo6 {z-index: 10; position: absolute; height: 57px; width: 100px; left: 1269px; top: 299px; transform: rotateY(180deg) rotate(-45deg);display: none;}
+	.humo7 {z-index: 10; position: absolute; height: 57px; width: 100px; left: 1269px; top: 499px; transform: rotateY(180deg) rotate(50deg);display: none;}
+
+
+
+	/* REDES SOCIALES EN EL HUMO */
+
+	.in {z-index: 12; height: 23px; width: 23px; position: absolute; left: 2089px; top: 170px; display: none;}
+	.gplus {z-index: 12; height: 32px; width: 32px; position: absolute; left: 2097px; top: 204px;  display: none;}
+	.twitter {z-index: 12; height: 29px; width: 29px; position: absolute; left: 2133px; top: 170px; display: none;}
+	.facebook2 {z-index: 12; height: 15px; width: 7px; position: absolute; left: 2145px; top: 210px; display: none;}
+	.youtube {z-index: 12; height: 30px; width: 30px; position: absolute; left: 2189px; top: 200px; display: none;}
+	.instagram {z-index: 12; height: 40px; width: 40px; position: absolute; left: 2219px; top: 230px; display: none;}
+	.in2 {z-index: 12; height: 10px; width: 10px; position: absolute; left: 2238px; top: 217px;  display: none;}
+	.twitter2 {z-index: 12; height: 17px; width: 18px; position: absolute; left: 2193px; top: 239px; display: none;}
+	.facebook {z-index: 12; height: 30px; width: 30px; position: absolute; left: 2259px; top: 260px; display: none;}
+	.bb {z-index: 12; height: 30px; width: 30px; position: absolute; left: 2277px; top: 227px; display: none;}
+
+
+	/* LLAVITOS Y PIEZAS RELACIONADAS */
+	.llavi1 {z-index: 10; height: 180px; width: 140px; position: absolute; left: -180px; top: 120px; display: block;}
+	.llavito1 {height: 151px; width: 122px; left: 25px; top: 9px; position: absolute;}
+
+	.cabeza {z-index: 2; position: absolute; height: 87px; width: 91px; left: 32px; top: 0px; display: none;}
+	.cabeza {transition: 0.9s ease; -moz-transition: 0.9s ease; -webkit-transition: 0.9s ease; -o-transition: 0.9s ease;}
+	.cuerpo {position: absolute; width: 107px; left: 25px; top: 71px; display: none;}
+
+	.dialogo1 {z-index: 10; height: 94px; width: 215px; position: absolute; left: 128px; top: -34px; display: none; }
+	.dialogoClick {z-index: 11; height: 20px; width: 179px; position: absolute; left: 151px; top: 9px; cursor: pointer;}
+
+	.movMano { height: 70px; width: 70px; left: 16px; top: 63px; position: absolute;}
+	.movMano {transition: 1.5s ease; -moz-transition: 1.5s ease; -webkit-transition: 1.5s ease; -o-transition: 1.5s ease;}
+	.carpeta1 { height: 72px; width: 72px; left: -5px; top: -2px; position: absolute;}
+	.dedosllavi { height: 19px; width: 15px; left: 9px; top: 45px; position: absolute;}
+	.manollavi { height: 18px; width: 18px; left: 7px; top: 37px; position: absolute;}
+
+	/* LLAVITOS */
+
+	.llavi0 {z-index: 17; height: 150px; width: 350px; position: absolute; left: 366px; top: 1200px; display: block;}
+	.llavito0 {z-index: 14; height: 270px; position: absolute; left: 47px; top: -100px; }
+	.equis0 {z-index: 15; height: 20px; width: 21px; position: absolute; display: block; left: 470px; top: 137px; cursor: pointer; }
+
+	.llavi2 {z-index: 17; height: 200px; width: 350px; position: absolute; left: 1513px; top: 1200px; display: block;}
+	.llavito2 {z-index: 11; height: 270px; position: absolute; left: 47px; top: -100px; }
+	.equis {z-index: 15; height: 20px; width: 21px; position: absolute; display: block; left: 470px; top: 137px; cursor: pointer; }
+
+	.llavi3 {z-index: 17; height: 200px; width: 350px; position: absolute; left: 2677px; top: 1200px; display: block; }
+	.llavito3 {z-index: 11; height: 270px; width: 460px; position: absolute; left: 47px; top: -100px; }
+	.equis2 {z-index: 15; height: 20px; width: 21px; position: absolute; display: block; left: 446px; top: 137px; cursor: pointer; }	
+
+	.llavi4 {z-index: 17; height: 200px; width: 350px; position: absolute; left: 3830px; top: 1200px; display: block; }
+	.llavito4 {z-index: 11; height: 270px; width: 460px; position: absolute; left: 47px; top: -100px; }	
+	.equis3 {z-index: 15; height: 20px; width: 21px; position: absolute; display: block; left: 446px; top: 137px; cursor: pointer; }	
+
+	.llavi5 {z-index: 17; height: 200px; width: 350px; position: absolute; left: 3903px; top: 1200px; display: block;}
+	.llavito5 {z-index: 11; height: 215px; position: absolute; left: 11px; top: -8px; }
+	.equis9 {z-index: 15; height: 20px; width: 174px; position: absolute; display: block; left: 129px; top: 176px; cursor: pointer; }	
+		
+
+	/* MISCELANEOS */
+
+	.riel {z-index: 5; height: 29px; width: 3937px; position: absolute; left: 730px; top: 86px; display: none;}
+	.pendon {z-index: 6; height: 0px; width: 141px; position: absolute; left: 4346px; top: 252px;}
+	.pendon {transition: 1s ease; -moz-transition: 1s ease; -webkit-transition: 1s ease; -o-transition: 1s ease;}
+
+	.ma1{z-index: 12; height: 250px; width: 200px; position: absolute; left: 181px; top: 350px; display: none;}
+	.ma1 > .aguja1 {z-index: 15; height: 48px; width: 25px; left: 18px; top: 132px; position: absolute;}
+	.ma1 > .btn1 { z-index: 16; position: absolute; height: 10px; width: 10px; left: 136px; top: 169px; }
+	.ma1 > .btn2 { z-index: 16; position: absolute; height: 10px; width: 10px; left: 147px; top: 156px; }
+	.ma1 > .btn3 { z-index: 16; position: absolute; height: 10px; width: 10px; left: 156px; top: 166px; }
+	.ma1 > .btn4 { z-index: 16; position: absolute; height: 10px; width: 10px; left: 165px; top: 173px; }
+	.ma1 > .tuerca5 {z-index: 16; height: 50px; width: 50px; left: 87px; top: 18px;  position: absolute; }
+	.ma1 > .tuerca6 {z-index: 16; height: 30px; width: 30px; left: 68px; top: 64px; position: absolute; }
+	.ma1 > .vasija {z-index: 15; height: 82px; width: 152px; position: absolute; left: 8px; top: -69px; }
+	.ma1 > .maquina1a {z-index: 5; height: 242px; width: 200px; left: -13px; top: 0px;  position: absolute;}
+	.ma1 > .tuercaMaquina1 {z-index: 4; height: 85px; width: 85px; left: -24px; top: 15px; position: absolute;}
+	.ma1 > .cadenaMA {z-index: 10; height: 42px; width: 52px; left: 75px; top: 39px; position: absolute;
+		transform: rotateY(145deg) rotate(61deg);}
+	.carpeta2 {z-index: 15; height: 44px; width: 65px; position: absolute; left: 55px; top: 37px; display:none;}
+
+	.conexion12 {z-index: 5; height: 16px; width: 215px; position: absolute; left: 1987px; top: 375px; display: none;}
+	.conexion22 {z-index: 5; height: 16px; width: 247px; position: absolute; left: 3476px; top: 240px; display: none;}
+	.conexion33 {z-index: 5; height: 16px; width: 68px; position: absolute; left: 3772px; top: 240px; display: none;}
+	.conexion1 {z-index: 5; height: 14px; width: 602px; position: absolute; left: 4797px; top: 276px; display: none;}
+	.conexion2 {z-index: 5; height: 16px; width: 545px; position: absolute; left: 1561px; top: 541px; display: none;}
+
+	.riel10{z-index: 5; height: 123px; width: 307px; position: absolute; left: 4455px; top: 478px; display: none;}
+
+
+	.correo {z-index: 11; height: 30px; width: 50px; position: absolute; left: 4175px; top: 162px; display: none;}
+	.adn {z-index: 11; position: absolute; height: 81px; width: 21px; left: 2780px; top: 256px; display: none;}
+	.telefono {z-index: 11; z-index: 10; height: 46px; width: 34px; position: absolute; left: 4118px; top: 341px; display: none;}
+	.ventana {z-index: 11; height: 58px; width: 51px; position: absolute; left: 4110px; top: 330px; display: none;}
+	.manoCursor {z-index: 16; height: 51px; width: 86px; position: absolute; left: 122px; top: 70px; display: none;}
+
+	.desague1 {z-index: 10; height: 45px; width: 110px; position: absolute; left: 537px; top: 314px; display: none;}
+	.desague2 {z-index: 10; height: 45px; width: 110px; position: absolute; left: 537px; top: 399px; display: none;}
+
+	.producto1 {z-index: 9; height: 35px; width: 35px; position: absolute; left: 584px; top: 408px; display: none;}
+	.producto2 {z-index: 9; height: 30px; width: 35px; position: absolute; left: 568px; top: 404px; display: none;}
+	.producto3 {z-index: 9; height: 30px; width: 35px; position: absolute; left: 549px; top: 404px; display: none;}
+	.producto4 {z-index: 9; height: 23px; width: 26px; position: absolute; left: 554px; top: 405px; display: none;}
+	.producto5 {z-index: 9; height: 30px; width: 30px; position: absolute; left: 604px; top: 403px; display: none;}
+
+	.maquina3 {z-index: 10; height: 117px; width: 232px; position: absolute; left: 5363px; top: 362px; display: none;}
+	.manito {z-index: 11; height: 34px; width: 29px; position: absolute; left: 4478px; top: 426px; display: none;}
+	.ventana3 {z-index: 12; height: 47px; width: 45px; position: absolute; left: 4472px; top: 417px; display: none;}
+	
+	.gota {z-index: 20; position: absolute; height: 0px; width: 14px; left: 2393px; top: 416px; }
+	.tuboEnsayo1 {z-index: 9; position: absolute; height: 72px; width: 46px; left: 2378px; top: 482px; display: none;}
+	.tuboEnsayo2 {z-index: 9; position: absolute; height: 72px; width: 46px; left: 2873px; top: 422px; display: none; }
+
+	.miniWeb {z-index: 15;height: 82px; width: 127px; position: absolute; left: 4070px; top: 250px;  display: none;
+    		background: url(../img/miniWeb.png); background-size: 132px; display: none; animation: recorrerLaptop 5s steps(8) infinite;}
+    .miniWeb:hover {animation: recorrerLaptop 7s steps(10) infinite; } 		    
+
+	.productofinal {z-index: 15; position: absolute; z-index: 13; height: 181px; width: 207px; left: 4515px; top: 373px; display: none;}
+	.productofinal {transition: 1s ease; -moz-transition: 1s ease; -webkit-transition: 1s ease; -o-transition: 1s ease;}
+	.productofinal:hover {z-index: 15; height: 210px; width: 244px; left: 4495px; top: 353px;}
+	.maquina10 {z-index: 12; height: 309px; width: 182px; position: absolute; left: 4530px; top: 177px; display: none;}
+	.palanca2 {z-index: 11; height: 68px; width: 106px; position: absolute; left: 4663px; top: 249px; display: none;}
+	.palanca2 {transition: 1s ease; -moz-transition: 1s ease; -webkit-transition: 1s ease; -o-transition: 1s ease;}
+	.manoCursor3 {z-index: 12; height: 51px; width: 86px; position: absolute; left: 4711px; top: 270px; display: none;}
+
+	.desagueAzul {z-index: 13; height: 132px; width: 70px; position: absolute; left: 4310px; top: 371px; display: none;}
+
+	.maquinaAmarilla {z-index: 9; width: 320px; height: 207px; position: absolute; left: 659px; top: 419px;}
+	div > .piezaMaquina6 {z-index: 9; height: 150px; width: 270px; position: absolute; left: 68px; top: 27px;}
+	div > .piezaMaquina7 {z-index: 12; width: 80px; left: 103px; top: 3px; position: absolute;}
+	div > .piezaMaquina2 {z-index: 15; height: 76px; width: 127px; position: absolute; left: 200px; top: 62px;}
+	div > .maquinaAmarilla3 {z-index: 14; height: 143px; width: 254px; position: absolute; left: 68px; top: 37px;}
+	div > .bombillo {z-index: 10; height: 70px; width: 100px; position: absolute; left: 106px; top: 67px;}
+	div > .fuga {z-index: 12; height: 70px; width: 37px; position: absolute; left: 179px; top: -34px;}
+
+	.divCarrito {z-index: 10; width: 399px; height: 101px; position: absolute; left: 1543px; top: 363px; display: none;}
+	div > .carrito {z-index: 10; height: 70px; width: 70px; position: absolute; left: -67px; top: 22px; }
+
+	.tubo1 {z-index: 9; height: 82px; width: 60px; position: absolute; left: 2097px; top: 246px; display: none;}
+	.tubo2 {z-index: 9; height: 53px; width: 38px; position: absolute; left: 2205px; top: 276px; display: none;}
+	.tubo3 {z-index: 9; height: 34px; width: 30px; position: absolute; left: 2255px; top: 295px; display: none;}
+
+	.piezaMaquina8 {z-index: 15; height: 49px; width: 110px; position: absolute; left: 3840px; top: 323px; display: none;}
+	.piezaMaquina9 {z-index: 11; height: 137px; width: 278px; position: absolute; left: 2025px; top: 333px; display: none;}
+	.piezaMaquina10 {z-index: 11; height: 149px; width: 160px; position: absolute; left: 2834px; top: 365px; display: none;}
+
+	.vidrio {z-index: 15; height: 45px; width: 122px; position: absolute; left: 1418px; top: 321px; display: none;}
+
+	.logoAzul {z-index: 11; height: 93px; width: 96px; position: absolute; left: 660px; top: 250px; display: none; cursor: pointer;}
+	.logoAzul1 {z-index: 12; height: 93px; width: 96px; position: absolute; left: 660px; top: 250px; cursor: pointer;
+			border-radius: 100%;}
+	.logoFucsia {z-index: 10; height: 93px; width: 96px; position: absolute; left: 660px; top: 250px; display: none; cursor: pointer;}
+	.manoCursor4 {z-index: 13; height: 51px; width: 86px; position: absolute; left: 713px; top: 316px; display: none;}
+
+	.piezaAmarilla {z-index: 9; height: 109px; width: 87px; position: absolute; left: 3182px; top: 362px; display: none;}
+	.piezaAmarilla2 {z-index: 11; height: 98px; width: 232px; position: absolute; left: 3385px; top: 369px; display: none;}
+	.piezaAmarilla3 {z-index: 11; height: 110px; width: 12px; position: absolute; left: 3617px; top: 369px; display: none;}
+	.ventana2 {z-index: 11; height: 111px; width: 156px; position: absolute; left: 3253px; top: 351px; display: none;}
+	.mundo {z-index: 8; height: 60px; width: 60px; position: absolute; left: 3206px; top: 392px; display: none;}
+	.mundo {transition: 1s ease; -moz-transition: 1s ease; -webkit-transition: 1s ease; -o-transition: 1s ease;} 
+	.piezaMaquina4 {z-index: 12; height: 127px; width: 570px; position: absolute; left: 3091px; top: 375px; display: none;}
+	.fondoAmarillo {z-index: 10; height: 100px; width: 39px; position: absolute; left: 3603px; top: 358px; display: none;}
+
+	.transformador {z-index: 11; height: 240px; width: 140px; position: absolute; left: 3103px; top: 184px; display: none;}
+	.maquinaAzul {z-index: 11; height: 204px; width: 130px; position: absolute; left: 4px; top: -2px;}
+	.aguja5 {z-index: 15; height: 25px; width: 8px; left: 64px; top: 92px; position: absolute;}
+	.luz7 { z-index: 10; position: absolute; height: 22px; width: 15px; left: 61px; top: 0px;}
+	.luz8 { z-index: 10; position: absolute; height: 22px; width: 15px; left: 61px; top: 0px;}
+
+	.cajita {z-index: 11; height: 250px; width: 250px; position: absolute; left: 3444px; /*left: 3200px;*/ top: 349px; display: block;}
+	.cajita > .caja1 {z-index: 11; height: 77px; width: 121px; position: absolute; left: 50px; top: 65px; display: block;}  
+	.cajita > .caja2 {z-index: 9; height: 32px; width: 117px; position: absolute; left: 50px; top: 49px; display: block;} 
+	.cajita > .hoja1 {z-index: 10; height: 55px; width: 71px; position: absolute; left: 75px; top: 37px; display: none;}
+
+
+	.maquinaRiel {z-index: 15; height: 100px; width: 100px; position: absolute; left: 829px; top: 78px; display: none;}
+	.piezaRiel {z-index: 15; height: 104px; width: 185px; position: absolute; left: 15px; top: -7px; }
+	.cuerda {z-index: 10; height: 0px; /*height: 214px;*/ width: 9px; position: absolute; left: 103px; top: 45px; }
+	.finalCuerda {z-index: 11; height: 50px; width: 50px; position: absolute; left: 83px; top: 45px;}
+	.finalCuerda {transition: 0.7s ease; -moz-transition: 0.7s ease; -webkit-transition: 0.7s ease; -o-transition: 0.7s ease;}
+	.gancho1 {z-index: 12; height: 43px; width: 27px; position: absolute; left: 77px; top: 51px;}
+	.gancho1 {transition: 0.7s ease; -moz-transition: 0.7s ease; -webkit-transition: 0.7s ease; -o-transition: 0.7s ease;}
+	.gancho2 {z-index: 12; height: 43px; width: 27px; position: absolute; left: 112px; top: 51px;}
+	.gancho2 {transition: 0.7s ease; -moz-transition: 0.7s ease; -webkit-transition: 0.7s ease; -o-transition: 0.7s ease;}
+
+
+	.text1 {z-index: 15; height: 57px; width: 140px; position: absolute; left: 37px; top: 35px; background: #D36102; border-radius: 12px; display: none; cursor: pointer;}
+	.text2 {z-index: 15; height: 57px; width: 140px; position: absolute; left: 37px; top: 35px; background: #9CC241; border-radius: 12px; display: none; cursor: pointer;}
+	.text3 {z-index: 15; height: 57px; width: 140px; position: absolute; left: 37px; top: 35px; background: #7FD5E7; border-radius: 12px; display: none; cursor: pointer;}
+	.text9 {z-index: 15; height: 57px; width: 140px; position: absolute; left: 37px; top: 35px; background: #259CD6; border-radius: 12px; display: none; cursor: pointer;}
+
+	.text1 > p {color: #FFFFFF; font-family: helveticaNeueLT; font-weight: bold; font-size: 25px; line-height: 25px; text-align: center; margin-top: 3px;}
+	.text2 > p {color: #FFFFFF; font-family: helveticaNeueLT; font-weight: bold; font-size: 23px; line-height: 26px; text-align: center; margin-top: 2px;}
+	.text3 > p {color: #FFFFFF; font-family: helveticaNeueLT; font-weight: bold; font-size: 20px; line-height: 21px; text-align: center; margin-top: 7px;}
+	.text9 > p {color: #FFFFFF; font-family: helveticaNeueLT; font-weight: bold; font-size: 21px; margin-top: 13px; text-align: center;}
+
+	/* -------------GORDITOS DE TUBERÍAS------------- */
+
+	.gordito1 {z-index: 10; position: absolute; height: 27px; width: 45px; left: 733px; top: 153px; display: none;}
+	.gordito2 {z-index: 10; position: absolute; height: 30px; width: 60px; left: 1565px; top: 534px;  display: none;}
+	.gordito3 {z-index: 10; position: absolute; height: 33px; width: 60px; left: 3478px; top: 234px; display: none;}
+	.gordito4 {z-index: 10; position: absolute; height: 26px; width: 43px; left: 4634px; top: 414px;  display: none;}
+	.gordito5 {z-index: 10; position: absolute; height: 30px; width: 60px; left: 4800px; top: 269px;  display: none;}
+	.gordito6 {z-index: 10; position: absolute; height: 41px; width: 26px; left: 4759px; top: 358px;  display: none;}
+	.gordito8 {z-index: 10; position: absolute; height: 35px; width: 27px; left: 695px; top: 205px;  display: none;}
+
+
+
+
+	/* -------------KEYFRAMES------------- */
+
+	.latido1 {z-index: 10; height: 30px; width: 64px; position: absolute; left: 449px; top: 427px;
+		background: url(../img/latidos.png);
+		background-size: 325px;  display: none;
+		animation: /*recorrerLatido 3s steps(8) infinite*/;
+	}
+
+	.latido2 {z-index: 10; height: 29px; width: 50px; position: absolute; left: 4409px; top: 283px;
+		background: url(../img/latidos.png);
+		background-size: 284px;  display: none;
+		animation: /*recorrerLatido 3s steps(8) infinite*/;
+	}
+
+	.latido3 {z-index: 11; height: 24px; width: 167px; position: absolute; left: 2116px; top: 344px;
+		background: url(../img/latidos.png);
+		background-size: 285px;  display: none;
+		animation: /*recorrerLatido 3s steps(8) infinite*/;
+	}
+
+	.barra1 {z-index: 11; height: 30px; width: 36px; position: absolute; left: 406px; top: 469px;
+		background: url(../img/barras.png);
+		background-size: 200px;  display: none;
+		animation: /*recorrerBarras 3s steps(7) infinite;*/}
+
+	.barra2 {z-index: 11; height: 20px; width: 34px; position: absolute; left: 21px; top: 131px;
+		background: url(../img/barras.png);
+		background-size: 200px;  display: none;
+		animation: /*recorrerBarras 3s steps(7) infinite;*/}
+
+	.barra3 {z-index: 11; height: 28px; width: 25px; position: absolute; left: 4045px; top: 357px;
+		background: url(../img/barras.png);
+		background-size: 200px;  display: none;
+		animation: /*recorrerBarras 3s steps(7) infinite;*/}
+
+
+	.riel1 {z-index: 8; height: 30px; width: 425px; position: absolute; left: 2311px; top: 540px;
+    	background: url(../img/rieles.png); background-size: 1000px; border-radius: 145px; display: none;
+		animation: /*recorrerRieles 14s steps(26) infinite;*/}
+
+	.riel2 {z-index: 8; height: 30px; height: 30px; width: 177px; position: absolute; left: 2711px; top: 506px;
+	    background: url(../img/rieles.png); background-size: 1000px; border-radius: 140px; display: none;
+	    transform : rotate(-25deg);
+		-moz-transform : rotate(-25deg); /* Firefox */
+		-webkit-transform : rotate(-25deg); /* Chrome - Safari */
+		-o-transform : rotate(-25deg); /* Opera */
+		animation: /*recorrerRieles 14s steps(26) infinite;*/}
+
+	.riel3 {z-index: 8; height: 30px; width: 514px; position: absolute; left: 1545px; top: 439px;
+	    background: url(../img/rieles.png); background-size: 1000px; border-radius: 145px; display: none;
+		animation: /*recorrerRieles 14s steps(26) infinite;*/}
+
+	.riel4 {z-index: 8; height: 30px; width: 110px; position: absolute; left: 2910px; top: 481px;
+	    background: url(../img/rieles.png); background-size: 1000px; border-radius: 145px; display: none;
+		animation: /*recorrerRieles 14s steps(26) infinite;*/}
+
+	.riel5 {z-index: 8; height: 30px; height: 30px; width: 177px; position: absolute; left: 2987px; top: 444px;
+	    background: url(../img/rieles.png); background-size: 1000px; border-radius: 140px;  display: none;
+	    transform : rotate(-30deg); 
+		-moz-transform : rotate(-30deg); /* Firefox */
+		-webkit-transform : rotate(-30deg); /* Chrome - Safari */
+		-o-transform : rotate(-30deg); /* Opera */
+		animation: /*recorrerRieles 14s steps(26) infinite;*/}	
+
+	.riel6 {z-index: 9; height: 30px; width: 691px; position: absolute; left: 3629px; top: 475px;
+	    background: url(../img/rieles.png); background-size: 1000px; border-radius: 145px; display: none;
+		animation: /*recorrerRieles 14s steps(26) infinite;*/}
+
+
+/*	.riel8 {z-index: 8; height: 30px; height: 30px; width: 136px; position: absolute; left: 5037px; top: 463px;
+	    background: url(../img/rieles.png); background-size: 1000px; border-radius: 140px; display: none;
+	    transform : rotate(-33deg);
+		-moz-transform : rotate(-33deg); 
+		-webkit-transform : rotate(-33deg); 
+		-o-transform : rotate(-33deg); }*/
+										
+
+	@keyframes recorrerLatido {
+		
+		from { background-position: 0px; }
+		to { background-position: -956px; }
+
+	}
+	@keyframes recorrerBarras {
+		
+		from { background-position: 0px; }
+		to { background-position: -207px; }
+
+	}
+
+	@keyframes recorrerRieles {
+		
+		from { background-position: 0px; }
+		to { background-position: -4500px; }
+	}
+
+	@keyframes recorrerLaptop {
+		
+		from { background-position: 0px 0px; }
+		to { background-position: 0px 1000px; }
+	}
+
+	.voltee {display: none;}
+	.fondo_moviles {display: none;}
+	.riel_moviles {display: none;}
+	.wrapper3 {display: none;}
+	.maquinaverde {display: none;}
+
+	
+}
