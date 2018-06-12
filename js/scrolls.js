@@ -34,7 +34,7 @@ function scrollleft() {
 				$(window).scrollLeft(0);
 			}
 			else {
-				$('html,body').animate({
+				$('html,body').stop(true, true).animate({
 	   				 scrollLeft: 0
 				}, 800);
 			}
@@ -51,7 +51,7 @@ function scrollleft() {
 				$(window).scrollLeft(1150);
 			}
 			else {
-				$('html,body').animate({
+				$('html,body').stop(true, true).animate({
 	   				 scrollLeft: 1150
 				}, 800);
 			}
@@ -70,7 +70,7 @@ function scrollleft() {
 				$(window).scrollLeft(2300);
 			}
 			else {
-				$('html,body').animate({
+				$('html,body').stop(true, true).animate({
 	   				 scrollLeft: 2300
 				}, 800);
 			}
@@ -89,7 +89,7 @@ function scrollleft() {
 				$(window).scrollLeft(0);
 			}
 			else {
-				$('html,body').animate({
+				$('html,body').stop(true, true).animate({
 	   				 scrollLeft: 0
 				}, 800);
 			}					
@@ -106,7 +106,7 @@ function scrollleft() {
 				$(window).scrollLeft(1150);
 			}
 			else {
-				$('html,body').animate({
+				$('html,body').stop(true, true).animate({
 	   				 scrollLeft: 1150
 				}, 800);
 			}						
@@ -124,7 +124,7 @@ function scrollleft() {
 				$(window).scrollLeft(2300);
 			}
 			else {
-				$('html,body').animate({
+				$('html,body').stop(true, true).animate({
 	   				 scrollLeft: 2300
 				}, 800);
 			}
@@ -141,7 +141,7 @@ function scrollleft() {
 				$(window).scrollLeft(3450);
 			}
 			else {
-				$('html,body').animate({
+				$('html,body').stop(true, true).animate({
 	   				 scrollLeft: 3450
 				}, 800);
 			}					
@@ -165,7 +165,7 @@ function scrollleft() {
 				$(window).scrollLeft(0);
 			}
 			else {
-				$('html,body').animate({
+				$(window).animate({
 	   				 scrollLeft: 0
 				}, 800);
 			}
@@ -183,7 +183,7 @@ function scrollleft() {
 				$(window).scrollLeft(1670);
 			}
 			else {
-				$('html,body').animate({
+				$(window).animate({
 	   				 scrollLeft: 1670
 				}, 800);
 			}			
@@ -199,7 +199,7 @@ function scrollleft() {
 				$(window).scrollLeft(3000);
 			}
 			else {
-				$('html,body').animate({
+				$('html,body').stop(true, true).animate({
 	   				 scrollLeft: 3000
 				}, 800);
 			}			
@@ -811,8 +811,8 @@ function scrollleft() {
 				$(window).scrollLeft(1150);
 			}
 			else {
-				$('html,body').animate({
-	   				 scrollLeft: 1150
+				$('html, body').animate({
+	   				 left: 1150
 				}, 800);
 			}
 	        
@@ -826,8 +826,8 @@ function scrollleft() {
 				$(window).scrollLeft(2300);
 			}
 			else {
-				$('html,body').animate({
-	   				 scrollLeft: 2300
+				$('html, body').animate({
+	   				 left: 2300
 				}, 800);
 			}
 	        
@@ -842,8 +842,8 @@ function scrollleft() {
 				$(window).scrollLeft(3450);
 			}
 			else {
-				$('html,body').animate({
-	   				 scrollLeft: 3450
+				$('html, body').animate({
+	   				 left: 3450
 				}, 800);
 			}					
 	        
@@ -858,8 +858,8 @@ function scrollleft() {
 				$(window).scrollLeft(4800);
 			}
 			else {
-				$('html,body').animate({
-	   				 scrollLeft: 4800
+				$('html, body').animate({
+	   				 left: 4800
 				}, 800);
 			}					
 	        
@@ -881,8 +881,8 @@ function scrollleft() {
 				$(window).scrollLeft(1670);
 			}
 			else {
-				$('html,body').animate({
-	   				 scrollLeft: 1670
+				$('html, body').animate({
+	   				 left: 1670
 				}, 800);
 			}						
 	        
@@ -898,7 +898,7 @@ function scrollleft() {
 			}
 			else {
 				$('html,body').animate({
-	   				 scrollLeft: 3000
+	   				 left: 3000
 				}, 800);
 			}						
 	        
@@ -914,7 +914,7 @@ function scrollleft() {
 			}
 			else {
 				$('html,body').animate({
-	   				 scrollLeft: 4550
+	   				 left: 4550
 				}, 800);
 			}					
 	        
@@ -937,7 +937,7 @@ function scrollleft() {
 				$(window).scrollLeft(1680);
 			}
 			else {
-				$('html,body').animate({
+				$('html, body').animate({
 	   				 scrollLeft: 1680
 				}, 800);
 			}						
@@ -952,7 +952,7 @@ function scrollleft() {
 				$(window).scrollLeft(3100);
 			}
 			else {
-				$('html,body').animate({
+				$('html, body').animate({
 	   				 scrollLeft: 3100
 				}, 800);
 			}						
@@ -968,7 +968,7 @@ function scrollleft() {
 				$(window).scrollLeft(4550);
 			}
 			else {
-				$('html,body').animate({
+				$('html, body').animate({
 	   				 scrollLeft: 4550
 				}, 800);
 			}						

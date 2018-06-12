@@ -811,7 +811,7 @@
 
 	
 	<!--  _________JAVASCRIPT_________  -->
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script src="js/portafolio.js"></script>
@@ -886,8 +886,8 @@
 			$('#3').on('click touchend', function(){scrollb(3)});
 			$('#4').on('click touchend', function(){scrollb(4)});
 
-			$('#barraLeft').on('click touchend', function(){ scrollleft() });
-			$('#barraRight').on('click touchend', function(){ scrollright() });
+			$('#barraLeft').on('click', function(){ scrollleft() });
+			$('#barraRight').on('click', function(){ scrollright() });
 
 	</script>
 <!-- 	<script type="text/javascript">
